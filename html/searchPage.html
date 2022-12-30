@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   <!-- title of the web page to be displayed on top bar  -->
+   <title>MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights &amp; Holiday</title>
+
+   <!-- link to the favicon icon  -->
+   <link rel="icon" type="image/x-icon" href="//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/favicon.ico">
+
+   <!-- link to css for search page  -->
+   <link rel="stylesheet" href="../css/search_page.css">
+
+   <!-- link to css for view-flightdetails  -->
+   <link rel="stylesheet" href="../css/view-flight-details.css">
+
+   <!-- link to css main style page  -->
+
+   <!-- <link rel="stylesheet" href="../css/mainpagestyle.css"> -->
+
+   <!-- cdn link fot font awsome  -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+   <!-- this is common header section  -->
+
+   <header id="Header_Id">
+      <nav class="flex">
+        <div class="logommt rin">
+          <img src="../images/homepageallimages/logo@2x.png" alt="" />
+        </div>
+
+        <div class="allicon  rin flex">
+          <ul class="">
+            <li>
+              <img
+                src="../icons/allnavicon/icons8-airplane-take-off-50.png"
+                alt="" 
+              />
+              <p>Flight</p>
+            </li>
+
+            <li>
+              <a href="../html/hotels.html" target="_blank" >
+                <img src="../icons/allnavicon/icons8-hotel-50.png" alt="" />
+              <p>Hotels</p>
+              </a>
+            </li>
+
+            <li>
+             <a href="../html/homestays.html"  target="_blank">
+              <img
+              src="../icons/allnavicon/icons8-house-with-a-garden-50.png"
+              alt=""
+            />
+            <p>Homestays</p>
+             </a>
+            </li>
+
+            <li>
+              <a href="../html/holiday-packages.html"  target="_blank">
+                <img src="../icons/allnavicon/icons8-balloon-5011.png" alt="" />
+              <p>Packages</p>
+              </a>
+            </li>
+
+
+            <li>
+              <img src="../icons/allnavicon/icons8-locomotive-50.png" alt="" />
+              <p>Trains</p>
+            </li>
+            <li>
+              <img src="../icons/allnavicon/icons8-bus-50.png" alt="" />
+              <p>Buses</p>
+            </li>
+            <li>
+              <img src="../icons/allnavicon/icons8-taxi-50.png" alt="" />
+              <p>Cabs</p>
+            </li>
+            <li>
+              <img src="../icons/allnavicon/icons8-money-yours-50.png" alt="" />
+              <p>Forex</p>
+            </li>
+            <li>
+              <img src="../icons/allnavicon/icons8-airplane-50.png" alt="" />
+              <p>Charter</p>
+            </li>
+            <li>
+              <img src="../icons/allnavicon/icons8-trekking-50.png" alt="" />
+              <p>Activities</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lastunorderedlist flex rin">
+          <div class="login flex rin">
+            <div><img src="../images/homepageallimages/my.png" alt="" /></div>
+            <div>
+              <div>Login or</div>
+              <div>Create Account</div>
+            </div>
+          </div>
+
+          <div class="country rin">
+            <div class="smallfont">Country</div>
+            <div>
+              <select name="" id="country">
+                <option value="India" class="option">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Australia">Australia</option>
+                <option value="Africa">Africa</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="language rin">
+            <div class="smallfont">Language</div>
+            <div>
+              <select name="" id="language">
+                <option value="ENG" class="option">ENG</option>
+                <option value="HINDI">Hindi</option>
+                <option value="URDU">Urdu</option>
+                <option value="SANSKRIT">Sanskrit</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+   <!-- this is search bar header section  -->
+
+   <main class="search_page_header">
+      <div class="header1">
+         <div class="trip_type trip_type_way">
+            <div class="trip_type_option">
+               <p>Trip Type</p>
+               <p class="trip_way_dynamic">One Way</p>
+            </div class="angle_down">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+         </div>
+         <div class="trip_way hidden">
+            <ul class="trip_way_options">
+               <li>One Way</li>
+               <li>Round</li>
+               <li>Multi-trip</li>
+            </ul>
+         </div>
+
+         <div class="trip_type trip_type_from trip_depart">
+            <p>From</p>
+            <p class="depart_city_display">Indore</p>
+            <div class="depart_city_container">
+ 
+           </div>
+         </div>
+
+         <i class="fa fa-exchange" aria-hidden="true"></i>
+
+
+         <div class="trip_type trip_type_from   trip_arrive">
+            <p>To</p>
+            <p class="arrive_city_display">New Delhi</p>
+            <div class="arrive_city_container">
+
+           </div>
+   
+         </div>
+
+         <div class="trip_type trip_type_from trip_type_margin ">
+            <p>Depart</p>
+            <p> <span class="day_name_display">Sat</span> <span class="month_display">Jan</span> <span class="day_display">14</span>, <span class="year_display">2023</span></p>
+         </div>
+         <div class="trip_type trip_type_from trip_type_margin">
+            <p>Return</p>
+            <p class="select_return">Select Return</p>
+         </div>
+         <div class="trip_type trip_type_from trip_type_margin">
+            <p>Passengers & Class</p>
+            <p> <span class="total_passenger">20</span> Passenger <span class="passenger_class">Premium/Economy</span> </p>
+         </div>
+         <button class="trip_type trip_type_from trip_type_margin search_btn">SEARCH</button>
+      </div>
+
+      <div class="header2">
+         <p>Fare Tye:</p>
+         <div class="fare_type_view">
+            <div class="fare_type">
+               <input type="radio" name="fare_type" id="">
+               <label for="">Regular</label>
+            </div>
+            <div class="fare_type">
+               <input type="radio" name="fare_type" id="">
+               <label for="">Armed Force <span>New</span> </label>
+            </div>
+            <div class="fare_type">
+               <input type="radio" name="fare_type" id="">
+               <label for="">Student</label>
+            </div>
+
+            <div class="fare_type">
+               <input type="radio" name="fare_type" id="">
+               <label for="">Student</label>
+            </div>
+            <div class="fare_type">
+               <input type="radio" name="fare_type" id="">
+               <label for="">Senior Citizen</label>
+            </div>
+            <div class="fare_type">
+               <input type="radio" name="fare_type" id="">
+               <label for="">Doctors & Nurse</label>
+            </div>
+            <div class="fare_type">
+               <input type="radio" name="fare_type" id="">
+               <label for="">Doctors & Nurse</label>
+            </div>
+            <div class="fare_type">
+               <input type="radio" name="fare_type" id="">
+               <label for="">Double Seat</label>
+            </div>
+         </div>
+
+      </div>
+   </main>
+
+   <!-- this is main page section  -->
+
+   <section class="search_page">
+    
+      <!-- side bar section starts here  --> 
+
+      <div class="back_top"></div>
+      <div class="popular_filters">
+
+         <!-- popular filter section  -->
+
+         <div class="popular_filter_heading">
+            <h3>Flight filters</h3>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="all_flights">
+                  <label for="">All Flights</label>
+               </div>
+               <span>₹ 5,890</span>
+            </div>
+           
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="air_india" value="air india">
+                  <label for="air_india">Air India (5)</label>
+               </div>
+               <span>₹ 6,255</span>
+            </div>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="akasa_air" value="akasa">
+                  <label for="akasa_air">Akasa Air (1)</label>
+               </div>
+               <span>₹ 5,890</span>
+            </div>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="emirates" value="emirates">
+                  <label for="emirates">Emirates (2)</label>
+               </div>
+               <span>₹ 5,023</span>
+            </div>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="indigo" value="indigo">
+                  <label for="indigo">Indigo (34)</label>
+               </div>
+               <span>₹ 4,955</span>
+            </div>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="spice_jet" value="spice jet">
+                  <label for="spice_jet">Spice jet (34)</label>
+               </div>
+               <span>₹ 5,145</span>
+            </div>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="vistara" value="vistara">
+                  <label for="vistara">Vistara (34)</label>
+               </div>
+               <span>₹ 6,890</span>
+            </div>
+           
+            <!-- <p class="show">Show less</p> -->
+         </div>
+
+          <!-- this in one way price section  -->
+
+         <div class="one_way_price">
+            <h3>One way price</h3>
+            <div id="silver_bar">
+               <div id="blue_bar"></div>
+            </div>
+            <div class="rs_range">
+               <span id="range1">₹4,955</span> <span id="range2">₹9,500</span>
+            </div>
+         </div>
+
+         <!-- this is stop section  -->
+
+         <div class="first_stops">
+            <h3>Stops From New Delhi</h3>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="">
+                  <label for="">Non Stop (54)</label>
+               </div>
+               <span>₹ 5,890</span>
+            </div>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="">
+                  <label for="">1 Stop (31)</label>
+               </div>
+               <span>₹ 4,955</span>
+            </div>
+
+         </div>
+
+         <!-- this is depart time section  -->
+
+         <div class="depart_time">
+            <h3>Departure From New Delhi</h3>
+            <div class="depart_for_flex">
+               <div class="time_icon time_icon1">
+                  <img
+                     src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/left-filters/morning_inactive.png?v=1"
+                     alt="">
+                  <p>Before 6 AM</p>
+                  <p>₹ 5,954</p>
+               </div>
+               <div class="time_icon">
+                  <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/left-filters/noon_inactive.png?v=1"
+                     alt="">
+                  <p>Before 6 AM</p>
+                  <p>₹ 5,954</p>
+               </div>
+               <div class="time_icon">
+                  <img
+                     src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/left-filters/evening_inactive.png?v=1"
+                     alt="">
+                  <p>Before 6 AM</p>
+                  <p>₹ 5,954</p>
+               </div>
+               <div class="time_icon">
+                  <img
+                     src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/left-filters/night_inactive.png?v=1"
+                     alt="">
+                  <p>Before 6 AM</p>
+                  <p>₹ 5,954</p>
+               </div>
+            </div>
+         </div>
+         <div class="depart_time">
+            <h3>Arrival at Mumbai</h3>
+            <div class="depart_for_flex">
+               <div class="time_icon time_icon1">
+                  <img
+                     src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/left-filters/morning_inactive.png?v=1"
+                     alt="">
+                  <p>Before 6 AM</p>
+                  <p>₹ 5,135</p>
+               </div>
+               <div class="time_icon">
+                  <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/left-filters/noon_inactive.png?v=1"
+                     alt="">
+                  <p>6 AM - 12 PM</p>
+                  <p>₹ 5,124</p>
+               </div>
+               <div class="time_icon">
+                  <img
+                     src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/left-filters/evening_inactive.png?v=1"
+                     alt="">
+                  <p>12 PM - 6 PM</p>
+                  <p>₹ 5,754</p>
+               </div>
+               <div class="time_icon">
+                  <img
+                     src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/left-filters/night_inactive.png?v=1"
+                     alt="">
+                  <p>After 6 PM</p>
+                  <p>₹ 5,454</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- this is airlines section  -->
+
+         <div class="popular_airlines airlines">
+            <h3>Popular Filters</h3>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="">
+                  <label for="">Non Stop (54)</label>
+               </div>
+               <span>₹ 5,890</span>
+            </div>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="">
+                  <label for="">Late Departures (25)</label>
+               </div>
+               <span>₹ 4,955</span>
+            </div>
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="">
+                  <label for="">Morning Departures (36)</label>
+               </div>
+               <span>₹ 5,422</span>
+            </div>
+
+            <div class="filter_val">
+               <div>
+                  <input type="radio" name="airline" id="">
+                  <label for="">Refundable fares (85)</label>
+               </div>
+               <span>₹ 4,360</span>
+            </div>
+
+            <!-- <p class="show">Show Less</p> -->
+         </div>
+         
+      </div>
+        <!-- side bar section ends here  -->
+
+       <!-- flight details section starts here  -->
+
+      <div class="flight_details">
+         <h2>Flights from New Delhi to Mumbai</h2>
+         <div class="my_safety">
+            <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/listing/safety.png" alt="">
+            <div class="side_margin">
+               <h4>Important Advisories & State Guidelines</h4>
+               <p>With travel opening up, govt. advisories and state/UT guidelines are constantly evolving. Please check
+                  the latest updates before travelling. <a href="">KNOW MORE</a></p>
+            </div>
+         </div>
+
+
+         <div class="sorted_by">
+            <button>
+               < </button>
+                  <div class="information_display">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <div class="information_display">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <div class="information_display">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <div class="information_display">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <div class="information_display">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <div class="information_display">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <div class="information_display">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <div class="information_display">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <div class="information_display information_display_last">
+                     <p>Wed,Jan 11</p>
+                     <p>₹4,964</p>
+                  </div>
+                  <button>></button>
+         </div>
+
+         <div class="info_table_outer">
+            <div class="info_table">
+               <p>Sorted BY:</p>
+               <ul>
+                  <li>Departture</li>
+                  <li>Duration</li>
+                  <li>Arrival</li>
+                  <li>Price </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- flight information display section starts here  -->
+
+         <section class="cheapest_flight_option">
+            <div class="seven_options">
+               <p>Cheaper flights with stopovers <span>(₹ 5,023 - ₹ 5,667)</span> </p>
+               <p>7 options available</p>
+            </div>
+
+          
+
+         </section>
+
+
+         <div class="flight_info_display">
+
+            <!-- <div class="blue_lock_box">
+               <img
+                  src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/farelock/fl_small_blue_plain_lock.png" />
+               <p>Lock this Price<span>i</span></p>
+            </div>
+
+            <div class="go_first">
+               <div class="go_first_logo">
+                  <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/G8.png?v=14" )" alt=""
+                     srcset="">
+                  <div class="go_first_para">
+                     <p>Go First</p>
+                     <p>G8 713, G8 392</p>
+                  </div>
+               </div>
+               <div class="flight_time">
+                  <p>20:25</p>
+                  <p>New Delhi</p>
+               </div>
+               <div class="one_stop">
+                  <p>10 h 30 m</p>
+                  <div class="blue_line"></div>
+                  <p>1 stop via Ahmedabad</p>
+               </div>
+
+               <div class>
+                  <div class="arrival_info">
+                     <p>06:55 </p>
+                     <div class="plus_one_day">
+                        <p>+1</p>
+                        <p>Day</p>
+                     </div>
+                  </div>
+                  <p class="destination">Mumbai</p>
+               </div>
+               <div class="price_details">
+                  <p>
+                     ₹ 5,023</p>
+               </div>
+
+               <button class="info_btn">View All <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+            </div> -->
+
+
+
+         </div>
+
+      </div>
+
+
+
+
+
+
+
+<script type="module" src="../js/searchPage.js"></script>
+
+   </section>
+</body>
+
+</html>

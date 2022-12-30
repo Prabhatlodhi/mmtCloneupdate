@@ -1,0 +1,185 @@
+/* ----------------General CSS starts here------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', 'Lato', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto 20px;
+}
+
+.small-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ----------Header logo-box CSS------------ */
+.logo-box {
+    margin-top: 8px;
+    display: flex;
+    height: 40px;
+}
+
+
+/* --------------Banner CSS------------------ */
+.banner img {
+    margin-top: 10px;
+    width: 100%;
+    height: 40%;
+}
+.banner {
+    margin: auto auto;
+}
+
+
+/* --------------Para-box CSS------------- */
+.para-box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+
+/* ------------OFFER Cards CSS-------------- */
+
+.image-card-section-row1, .image-card-section-row2 {
+    gap: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.image-cards {
+    height: 200px;
+    cursor: pointer;
+}
+
+.card-details {
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-card-section-row1 .card-details, .image-card-section-row2 .card-details{
+    background-color: #eaf6fe;
+}
+
+.image-card-section-row1 .card-details h3, .image-card-section-row2 .card-details h3{
+    padding-top: 10px;
+    padding-bottom: 7px;
+    color: #154781 ;
+}
+
+.image-card-section-row1 .card-details p, .image-card-section-row2 .card-details p{    
+    padding-bottom: 7px;
+    color: rgba(0, 0, 0, 0.767) ;
+}
+
+.use-code {
+    background-color: rgba(0, 0, 139, 0.808);
+    border: none; 
+    border-radius: 5px;
+    padding: 6px;
+    color: rgba(0, 0, 0, 0.767) ;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.coupun-code {
+    color: black;
+    background-color: white;
+    border: 1px dashed gray;
+    border-radius: 5px;
+    margin-left: -5px;
+    font-weight: bold;
+    color: #1a345d;
+    padding: 6px 10px; 
+}
+
+.book-btn{    
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.767) ;
+    font-weight: bold;  
+    border-radius: 15px;
+    padding: 8px 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.726) , rgba(255, 255, 0, 0.911));
+    margin-bottom: 15px;
+}
+
+.cards {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.514)
+    /* border: 1px solid gray; */
+   
+}
+
+
+/* --------------FAQs CSS------------- */
+
+.faqs-section {
+    margin-top: 40px;
+    margin-bottom: 60px;  
+}
+
+.faqs-section .content-container .question {
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid gray;
+    position: relative;
+    cursor: pointer;
+}
+
+.faqs-section .content-container .question::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+}
+
+.answer {
+    padding-top: 10px;
+    line-height: 1.5;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    color: gray;
+    font-size: 12px;
+    transition: 1s;
+    margin-left: 10px;
+}
+
+/* -----------FAQs Script CSS----------- */
+.faqs-section .content-container.active .answer {
+    height: 30px;
+}
+
+
+/* --------------footers CSS---------=---- */
+.footer {
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    background-color: #1a345d ;
+    height: 50px;
+}
+
+

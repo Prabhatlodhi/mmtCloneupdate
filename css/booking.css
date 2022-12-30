@@ -1,0 +1,979 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', 'Lato', sans-serif;
+  font-size: 14px;
+}
+body{
+  background-color: #e5eef4;
+}
+
+.iconS24{
+  width: 24px;
+  height: 24px;
+}
+.icon20{
+height: 20px;
+width: 20px;
+}
+
+html { 
+  scroll-behavior: smooth;
+}
+h2{
+  font-size: 1.3rem;
+}
+
+.blackFont{
+  font-weight: 900;
+  display: inline-block;
+}
+.marginTopBtm{
+  margin: 15px 0;
+}
+input[type="checkbox"], input[type="radio"]{
+  box-sizing: border-box;
+  padding: 0;
+  cursor: pointer;
+}
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+.flexJ{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.traveller-container{
+  margin-bottom: 100px;
+}
+.booking-container{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.sticky-header{
+  background-color: #041422;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 0;
+}
+.header-container ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header-container ul li,a {
+  color: hsla(0,0%,100%,.5);
+  font-size: 0.85rem;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.booking-body {
+  position: relative;
+}
+.bg-gradient{
+  background-image: linear-gradient(0deg,#15457b,#051423);
+  min-height: 150px;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+.booking-details{
+  display: flex;
+  justify-content: space-between;
+  /* background-color: white; */
+}
+.border {
+  border: 1px solid red;
+}
+.booking-details .flight-details{
+  width: 882px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 3px;
+}
+.fgt-padding {
+  padding: 12px 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 21%);
+  border: 1px solid #e9e9e9;
+}
+
+.flight-details-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  border-left: 4px solid rgb(25, 141, 141);
+}
+.flight-trip p{
+  padding: 14px 0 3px 0;
+}
+.flight-trip p>span{
+  background-color: rgb(252, 234, 201);
+  padding: 4px;
+  margin-right: 10px;
+}
+.fare-rules .fee {
+  background-image: linear-gradient(to right, rgb(45, 193, 140), rgb(33, 147, 147));
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+.fare-rules .view-fare{
+  color: #0091ff;
+  text-align: right;
+  padding: 14px 0 3px 0;
+}
+.flight-details-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 12px; */
+  margin-left: 18px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+.flight-img{
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.flight-details-bottom .saver{
+  color: rgb(33, 147, 147);
+  font-weight: 700;
+}
+.flight-details-bottom .eco-img{
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+  margin-left: 6px;
+}
+.flight-timings{
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-left: 18px;
+  margin-right: 14px;
+  position: relative;
+}
+.circle-timings{
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  border-radius:50%;
+  margin: 0 6px 0 10px;
+  border: 2px solid #979797;
+}
+.arrival-place {
+  display: inline-block;
+}
+.timings-left {
+  flex: 1;
+}
+.timings-left::before{
+    content: "";
+    position: absolute;
+    top: 22px;
+    height: calc(100% - 50px);
+    border-left: 2px dashed #979797;
+    left: 63px;
+}
+.timings-left .trip-hours{
+  margin: 14px 0 14px 70px;
+}
+.timings-right{
+  flex-wrap: wrap;
+  width: 220px;
+}
+.timings-right th{
+  font-size: 12px;
+  padding-right: 20px;
+  color: #979797;
+  font-weight: 400;
+  text-align: left;
+}
+.timings-right tr td b{
+  font-size: 12px; 
+}
+.flight-details .extra-baggage{
+  background-color: rgb(245, 245, 255);
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  padding: 7px 15px;
+  margin-top: 2px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.flight-details .extra-baggage img{
+  width: 20px;
+}
+.flight-details .extra-baggage p{
+  font-size: 12px;
+  margin-left: 10px;
+}
+.flight-details .cancel-refund{
+  background-color: rgb(245, 245, 255);
+  margin-top: 40px;
+}
+.flight-details .cancel-refund .policy{
+  justify-content: space-between;
+}
+.flight-details .cancel-refund .policy h3{
+  font-size: 1.2rem;
+}
+.flight-details .cancel-refund .policy p{
+  color: #0091ff;
+  cursor: pointer;
+}
+.cancel-refund .cancel-penalty{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 140px;
+  padding-bottom: 16px;
+}
+.cancel-policy{
+  display: flex;
+  margin-bottom: 18px; 
+}
+.cancel-penalty>p{
+  font-size: 12px;
+}
+.cancel-refund .cancel-pricebar{
+  flex: 1;
+}
+.cancel-pricebar>div{
+  display: flex;
+  text-align: center;
+}
+.cancel-pricebar div:first-child span{
+  font-weight: 900;
+  flex: 1;
+  text-align: center;
+}
+.color-bar {
+  height: 6px;
+  background-image: linear-gradient(to right, rgb(1, 149, 60), rgb(131, 180, 48), rgb(214, 158, 21), rgb(250, 93, 93));
+  border-radius: 12px;
+  margin: 6px 0;
+}
+.cancel-pricebar div.date-cancel{
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+}
+/* .date-cancel div:nth-child(even){
+  color: red;
+} */
+.refund-policy{
+  background-color: rgb(221, 255, 254);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+  padding: 8px 10px;
+  border-radius: 2px;
+  margin-bottom: 6px;
+}
+.refund-policy img{
+  margin-right: 10px;
+}
+.refund-policy p:nth-child(3){
+  color: #0091ff;
+  margin-left: auto;
+}
+.unsure-travel{
+  padding: 16px 15px 24px;
+  background-color: #f5f5ff;
+  margin-top: 20px;
+}
+.unsure-travel .zero-cancel{
+background-color: white;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+padding: 10px 10px 14px 10px;
+border-radius: 2px;
+margin: 20px 0 0 0;
+}
+.zero-cancel .travel-plan{
+  width: 16px;
+  margin-left: auto;
+}
+#zero-cancellation{
+  width: 18px;
+  height: 18px;
+}
+.zero-cancel>div>label{
+  color: rgb(36, 153, 149);
+  font-weight: 600;
+  margin-left: 10px;
+}
+.refund-terms{
+  margin-top: 6px;
+}
+.refund-terms p b{
+  font-size: 12px;
+  margin-left: 28px;
+}
+.refund-terms p{
+  font-size: 12px;
+}
+.refund-terms a{
+  text-decoration: none;
+  color: #0091ff;
+  font-size: 12px;
+}
+.trip-money{
+  position: relative;
+  background-color: rgb(1, 33, 56);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+.tripmoney-div{
+  display: flex;
+  justify-content: space-between;
+}
+.paylater-img{
+  width: 30px;
+  margin-right: 8px;
+}
+div.booknow-text p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.paylater-use{
+  width: 350px;
+  position: relative;
+  background-color: white;
+  padding: 12px;
+  border-radius: 16px;
+  height: 100px;
+}
+.paylater-use p{
+  color: black;
+  padding: 2px 4px 4px 0;
+  border-bottom: 0.5px solid rgb(87, 86, 86);
+}
+.paylater-use .tripmoney-login{
+  background-color: rgb(1, 33, 56);
+  width: 140px;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.cancel--refund{
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+.cancel--refund p{
+  margin-top: 5px;
+}
+.cancel--refund h3{
+  font-size: 16px;
+}
+.cancel--refund p a{
+  text-decoration: none;
+  color: #0091ff;
+}
+.imp-info{
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-shadow: 0 3px 30px 0 rgb(0 0 0 / 10%);
+}
+.imp-info ul {
+  margin-left: 14px;
+  padding-top: 8px;
+}
+.imp-info ul li{
+  font-size: 11px;
+  padding: 2px 0;
+}
+.imp-info ul li:first-child{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.imp-info-div{
+  margin-top: 5px;
+}
+.imp-info-img{
+  margin-right: 10px;
+}
+/*--========================== Travel Insurance section Starts Here ===============================-->*/
+
+.insurance-wrapper{
+  background-color: white;
+  width: 882px;
+  /* height: 395px; */
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.insurance-wrapper .travel-insurance{
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 10px 20px;
+}
+.travel-insurance .insurance-shield{
+  width: 32px;
+  /* height: 32px; */
+  margin-right: 10px;
+}
+.travel-insurance h1{
+  font-size: large;
+}
+.travel-insurance .reliance-insu{
+  width: 60px;
+  margin-left: auto;
+}
+.insurance-traveller {
+  /* position: absolute; */
+  width: 882px;
+  background-color: #f5f5ff;
+  padding: 15px 20px;
+ }
+ .insurance-traveller>p{
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 10px;
+ }
+ .insurance-traveller>p>span{
+  font-weight: 400;
+  font-size: 12px;
+ }
+ .insurance-card{
+   background-color: white;
+   border-radius: 5px;
+   padding: 10px 10px 10px 30px;
+   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+   display: flex;
+   margin: 5px;
+ }
+ .swiper-img{
+   width: 24px;
+   height: 24px;
+   margin-right: 10px;
+   margin-top: 4px;
+ }
+ .swiper-img img{
+   width: 100%;
+ }
+ .swiper-text h3{
+   color: #00a19c;
+   font-weight: 700;
+ }
+ .swiper-text p{
+   font-weight: 700;
+   margin-top: 5px;
+   font-size: 12px;
+ }
+ .swiper-button-next {
+   background-image: url(../images/bookingImg/Angle_right.svg);
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   background-position: center;
+ }
+ .swiper-button-next::after {
+   display: none;
+ }
+ .swiper-button-prev {
+   background-image: url(../images/bookingImg/Angle_left.svg);
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   background-position: center;
+ }
+ .swiper-button-prev::after {
+   display: none;
+ }
+ .industry-first{
+  /* position: absolute; */
+  /* top: 202px; */
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.insurance-wrapper .insurance-reviews{
+  /* top: 207px;
+  position: absolute; */
+  width: 882px;
+  padding: 15px 20px;
+  overflow: hidden;
+}
+.secure-trip{
+  /* position:absolute; */
+  /* top: 320px; */
+  margin-left: 20px;
+  
+}
+.secure-trip label{
+  padding: 0 0 6px 6px;
+  display: inline-block;
+}
+.secure-trip>p{
+  font-size: 11px;
+  color: #979797;
+  padding-bottom: 20px;
+}
+.secure-trip a{
+  text-decoration: none;
+  font-size: 11px;
+  color: #008cff;
+}
+.yes-message{
+  background-color: #8dffca;
+  padding: 10px;
+  margin: 5px 20px 5px 0px;
+}
+.no-message{
+  background-color: #8dffca;
+  padding: 10px;
+  margin: 5px 20px 5px 0px;
+}
+.review-card{
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 8px 10px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+  display: flex;
+  margin: 5px;
+  width: 405px;
+}
+.insurance-reviews h3{
+  padding-bottom: 8px;
+}
+.review-card .swiper-text p:first-child{
+  font-weight: 100;
+}
+.review-card .swiper-text .reviewers-name{
+  text-align: right;
+}
+.review-card .swiper-img{
+  width: 45px;
+}
+/*--========================== Travel Insurance section ends Here ===============================-->*/
+
+.traveller-details{
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-shadow: 0 3px 30px 0 rgb(0 0 0 / 10%);
+}
+.traveller-details-div{
+  padding: 20px;
+}
+.traveller-details .traveller-login{
+  background-color: #ecf5fa;
+  padding: 10px;
+  border-radius: 2px;
+  margin-top: 18px;
+}
+.traveller-details .traveller-login button{
+  margin-left: auto;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-weight: 700;
+  color: #008cff;
+  cursor: pointer;
+}
+.traveller-details .traveller-login img{
+  width: 20px;
+  margin-right: 10px;
+}
+.traveller-age{
+  margin: 18px 0 8px;
+}
+.traveller-age img {
+  margin-right: 10px;
+}
+.traveller-age .traveller-added{
+  margin-left: auto;
+}
+.added-status {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 3px 30px 0 rgb(0 0 0 / 10%);
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.notadded-adults{
+  border-bottom: 1px solid rgb(245, 245, 245);
+  padding: 12px 0 12px 12px;
+}
+.adult-add{
+  padding-left: 12px;
+}
+#addnew-adult{
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+  color: #008cff;
+  padding: 12px 0 12px 12px;
+  cursor: pointer;
+  font-size: 12px;
+}
+#adult1{
+margin: 10px 8px 10px 0;
+}
+.adult-section input[type=text] {
+  border: 1px solid #979797;
+  width: 220px;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 4px 4px 4px 0;
+}
+
+.gender-section {
+  display: inline;
+}
+.gender-section input[type=radio]{
+  width: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking-send{
+  padding: 20px;
+  border-top: 0.8px solid rgb(226, 224, 224);
+  border-bottom: 0.8px solid rgb(226, 224, 224);
+}
+.booking-send p {
+  padding-bottom: 15px;
+}
+ .booking-send form>div{
+  width: 30%;
+  margin-right: 5px;
+ display: inline-block;
+}
+.booking-send form>div p{
+  padding-bottom: 8px;
+}
+.booking-send form>div input,select{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+.gst-section{
+  padding: 20px;
+}
+.gst-details>div{
+  width: 30%;
+  margin-right: 5px;
+ display: inline-block;
+}
+.gst-details>div input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+.gst-details>div p{
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+/***********************LOCK PRICE SECTION*********************/
+.lock-price{
+  margin: 20px 0 15px 0;
+  background-color: white;
+  padding: 20px;
+}
+.lock-price img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #0a6fbb;
+  padding: 3px;
+  margin-right: 10px;
+}
+.lock-price h2{
+  font-size: 18px;
+  font-weight: bolder;
+}
+.lock-price h2>span{
+  color: #00a19c;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.lock-price .locknow-btn{
+  margin-left: auto;
+  background-color: #fff;
+  border: 1px solid #008cff;
+  color: #008cff;
+  font-weight: 700;
+  padding: 5px 20px;
+  height: 30px;
+  border-radius: 35px;
+  box-shadow: 0 1px 7px 0 rgb(0 0 0 / 22%);
+}
+
+.continue-btn{
+  border-radius: 35px;
+  box-shadow: 0 1px 7px 0 rgb(0 0 0 / 22%);
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 11px 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  background-image: linear-gradient(to right, rgb(50, 189, 244),rgb(25, 114, 248));
+}
+
+.addon-section{
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 3px 30px 0 rgb(0 0 0 / 10%);
+  opacity: 0.4;
+  margin-top: 15px;
+  align-items: flex-end;
+  cursor: not-allowed;
+}
+.addon-section h2 {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+ /************************* Right side Fare Summary Section Starts Here ************/
+
+.booking-details .fare-details{
+  width: 296px;
+  position: sticky;
+  top: 65px;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.fare-details .fare--summary{
+  background-color: white;
+  padding: 20px 14px;
+}
+.fare--summary .base--fare{
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.fare--summary .base--fare img{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.fare--summary .base--fare .basefare-section{
+  cursor: pointer;
+}
+.fare--summary .fare--div{
+  padding-left: 25px;
+  margin-top: 12px;
+}
+.fare--div2, .fare--div3{
+  padding-left: 25px;
+  margin-top: 12px;
+}
+
+
+
+.fare--summary .fee--surcharge, .fare--summary .fee--surcharge1 {
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  
+}
+.fare--summary .fee--surcharge img, .fare--summary .fee--surcharge1 img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.fare--summary .fare--div{
+  padding-left: 25px;
+}
+.total--amount{
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
+.promocodes-container{
+  margin-top: 10px;
+}
+.promo-wrap{
+  padding: 15px;
+  border-radius: 2px;
+  background-color: white;
+}
+.promo-codes{
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(0deg,#edd287,#b8860b);
+  margin: -15px -15px 15px;
+  overflow: hidden;
+  padding: 8px 20px;
+  position: relative;
+}
+.promo-text{
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+.promo-text>span{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+}
+.promo-img-wrapper{
+  background-color: white;
+  content: "";
+  width: 80px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  border-radius: 40px 0 0 20px;
+}
+.promo-img{
+  width: 49px;
+  height: 30px;
+  object-fit: contain;
+}
+.promo-wrap .enter-promo{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #d5d5d5;
+  color: black;
+  margin-bottom: 10px;
+}
+.promo-wrap .promo-card{
+  background-color: #f4f4f4;
+  padding: 15px 8px;
+  margin-top: 10px;
+}
+.promo-card .promocode-select{
+  display: flex;
+  align-items: flex-start;
+}
+div.promo-card img{
+  width: 25px;
+}
+.mmtsuper{
+  margin-left: 5px;
+  line-height: 22px;
+}
+
+.mmtpromo-terms{
+  color: #0091ff;
+  cursor: pointer;
+}
+
+.display_column{
+  display: grid;
+  grid-template-rows: auto auto auto;  
+  }
+
+.displayn{
+  display: none;
+}
+
+.promo_btn{
+  width:40%;
+  margin-left: 30%;
+  padding:10px;
+  font-size: 20px;
+  border:none;
+  background-color: #0091ff;
+  color:white;
+  cursor:pointer;
+  margin-top: 10px;
+}
+
+.promo_message{
+  color:rgb(6, 74, 6);
+  background-color: rgb(194, 250, 194);
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.promo_message h2{
+  font-size: 2em;
+  display: flex;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:30px;
+}
+
+
+.adults, .children, .infants{
+  width:125%;
+  display: flex;
+  justify-content:space-between;
+  
+}
+
+.error_msg_display{
+  color:red;
+  margin-top:5px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  font-size: 20px;
+}
+
+.error_msg_input{
+  color:red;
+  margin-top: 10px;
+  margin-left: 31%;
+  font-size: 20px;
+}
+
+.red_boder_input{
+  border: 1px solid red;
+}
+/* .adults p, .children p, .infants p{
+
+} */
+
+
+
+
+

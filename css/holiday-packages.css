@@ -1,0 +1,484 @@
+/* ----------------General CSS starts here------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', 'Lato', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  /* margin: auto 20px; */
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 220px) {
+  body {
+    background-color: tomato;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.max-container-size {
+  max-width: 1200px;
+  margin: auto auto;
+  /* border: 2px solid blue; */
+}
+
+.inner-container {
+  max-width: 1130px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-dir-row {
+  flex-direction: row;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-check {
+  border: 2px dashed blue;
+}
+
+.small-font {
+  font-size: 12px;
+  color: black;
+}
+
+.font10px {
+  font-size: 10px;
+}
+
+
+.lst-styl-non {
+  list-style: none;
+}
+
+.boxshadow {
+  /* box-shadow: 0 8px 16px 0 rgba(236, 12, 12, 0.678);  */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+/* -----------------Top-Banner Slider CSS----------------------- */
+.myCarouselClass {
+  margin: 20px auto;
+}
+
+
+/*   -----------------Why makeMyTrip Travel css-----------------------   */
+.why-mmt-box {
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.why-mmt-box span {
+  /* border: 1px solid blue; */
+  width: 220px;
+  display: block;
+}
+.why-mmt-box span p {
+  font-size: 12px;
+}
+.why-mmt-box img {
+  /* border: 3px solid blue; */
+  width: 220px;
+  margin: 5px;
+}
+
+/* -------------------Adds Box CSS-------------------------- */
+.adds-box {
+  margin: 20px auto;
+}
+
+.adds-box img {
+  width: 100%;
+}
+
+/* --------------International Destinations & Explore the Unexplored Slider box COMMON CSS-------------------------   */
+.wrapper-slider-box {
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.slider-box {
+  align-items: flex-start;
+}
+
+.slider-box .slider-cards img {
+  margin-top: 15px;
+  aspect-ratio: 0.75;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-cards .item:hover {
+  padding: 15px;
+  background-color: hsl(351, 100%, 86%, 0.3);
+  border-radius: 15px;
+}
+
+.slider-box .slider-cards .slider-text {
+  color: black;
+  margin-top: 15px;
+  justify-content: flex-start;
+}
+.slider-box .slider-cards p {
+  color: gray;
+  font-size: 12px;
+}
+
+
+/* -----------------mmt luxe-box selections css----------------------- */
+.mmt-lux-box {
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.cards {
+  flex-wrap: wrap;
+  gap: 25px;
+  border-right: 20px;
+  margin-left: 20px;
+  margin: auto;
+}
+
+/* -----------------mmt luxe-box details css----------------------- */
+.mmt-lux-disc {
+  width: 300px;
+}
+
+.mmt-lux-disc p:nth-child(1) {
+  color: rgb(0, 0, 0, 0.8);
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+
+.mmt-lux-disc h1 {
+  color: #e1be5b;
+  font-size: 32px;
+  margin-bottom: -5px;
+}
+
+.mmt-lux-disc .para {
+  font-size: 14px;
+  /* border: 1px solid blue; */
+  margin: 5px auto;
+}
+
+.mmt-lux-disc button {
+  padding: 5px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #e1be5b;
+  border: none;
+  margin: 10px auto;
+}
+
+
+/* -----------------mmt luxe-box cards css----------------------- */
+.mmt-lux-box .cards img {
+  width: 240px;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+.card-container {
+  border-radius: 5px;
+  width: 240px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container div:nth-child(2) {
+  padding: 10px;
+  margin-top: -10px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card-container div:nth-child(2) p {
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: lightslategray;
+}
+
+
+
+
+/* -------------City List Box CSS------------------------- */
+.wrapper-city-box {
+  margin: 10px auto;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  padding: 20px;
+  padding-right: 20px;
+  gap: 20px;
+}
+
+.wrapper-city-box img {
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+.city {
+  max-width: fit-content;
+  flex: 5;
+}
+
+/* responsiveness City List Box HTML */
+@media only screen and (max-width: 1000px) {
+  .wrapper-city-box {
+    padding: 20px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .wrapper-city-box {
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .wrapper-city-box {
+    grid-template-columns: auto;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+
+
+/* -------------------Order-Now Box CSS---------------------- */
+.order-now-box {
+  padding: 10px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.order-now-box .left {
+  margin-left: 10px;
+}
+
+.order-now-box .right {
+  margin-left: 20px;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+.order-now-box .right img {
+  margin-left: 15px;
+}
+
+.order-now-box .img-box {
+  height: 60px;
+}
+
+.order-now-box .img-box img {
+  height: 60px;
+}
+
+.order-now-box .img-box {
+  margin-right: 10px;
+}
+
+
+
+/* -------------------Footer Portion-Top Box CSS---------------------- */
+.footer-top-one-unit .heading {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.footer-top-one-unit {
+  margin-bottom: 12px;
+}
+
+.footer-top-one-unit p:hover {
+  color: blue;
+}
+
+.footer-top {
+  margin: 60px auto;
+}
+
+
+
+
+/* -------------------Footer Portion-Top Box CSS---------------------- */
+.footer-top-one-unit .heading {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.footer-top-one-unit {
+  margin-bottom: 12px;
+}
+
+.footer-top-one-unit p:hover {
+  color: blue;
+}
+
+.footer-top {
+  margin: 60px auto;
+}
+
+/* -------------------Footer Portion-Middle Box CSS---------------------- */
+.footer-color {
+  background-color: #e7e7e7;
+  margin: 60px auto;
+  border: 1px solid #e7e7e7;
+  margin-left: -20px;
+  padding-left: 20px;
+  margin-right: -20px;
+  padding-right: 20px;
+}
+
+.footer-middle {
+  justify-content: space-between;
+  margin: 60px auto;
+}
+
+.footer-middle-one-unit {
+  width: 31%;
+}
+
+.footer-middle-one-unit .question {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+
+/* -------------------Footer Portion-Bottom Box CSS---------------------- */
+.footer-bottom {
+  border: 1px solid black;
+  background-color: black;
+  margin-top: -60px;
+  margin-left: -20px;
+  padding-left: 20px;
+  margin-right: -20px;
+  padding-right: 20px;
+}
+
+.footer-bottom-inner-box {
+  color: white;
+  justify-content: space-between;
+  margin: 60px auto;
+}
+
+.mmt-copy-right {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-bottom-inner-box .icons i:nth-child(1) {
+  margin-right: 30px;
+}
+
+/* ---------------------------media query css for RESPOSIVENESS------------------ */
+
+@media only screen and (max-width: 900px) {
+  .order-now-box .right {
+    font-size: 12px;
+  }
+
+  .order-now-box .left {
+    font-size: 12px;
+  }
+
+  .order-now-box .right img {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .order-now-box .right {
+    font-size: 10px;
+  }
+
+  .order-now-box .left {
+    font-size: 10px;
+  }
+
+  .order-now-box .right img {
+    display: none;
+
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-middle-one-unit {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .order-now-box {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .order-now-box .left {
+    flex-direction: column;
+  }
+
+  .footer-bottom-inner-box {
+    flex-direction: column;
+  }
+
+  .disc-box .trip,
+  .disc-box :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  body {
+    display: none;
+  }
+}

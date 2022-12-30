@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights &amp; Holiday
+    </title>
+
+    <!-- stylesheet -->
+    <!-- <link rel="stylesheet" href="../css/mainpagestyle.css" /> -->
+    <!-- <link rel="stylesheet" href="../css/sign-in.css"> -->
+    <link rel="stylesheet" href="../css/chat-n-feedback.css">
+
+    <!-- Global Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+
+    <!-- FontsAwsome  links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Favicon icon links-->
+    <link rel="icon" type="image/x-icon" href="//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/favicon.ico" />
+
+    <!-- j-query & owl-carousel cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit = "sendMail(); reset(); return false;">
+            <h3>Leave ur Valuable Feedback n message here, we will work on it to make it better</h3>
+            <input type="text" id="name" placeholder="Your Name Please..." required>
+            <input type="email" id="email" placeholder="Your Email id" required>
+            <input type="number" id="mobile-no" placeholder="Your Phone Number">
+            <textarea name="" id="message" cols="" rows="6" placeholder="Drop ur Valuable feedback here...."
+                required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendMail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "raviegupta153@gmail.com",
+                Password: "",
+                To: 'raviegupta351@.com',
+                From: document.getElementById('email').value,
+                Subject: "New Response",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+</body>
+
+</html>

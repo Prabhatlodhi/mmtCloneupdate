@@ -1,0 +1,378 @@
+/* ----------------General CSS starts here------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    /* margin: auto 20px; */
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 220px) {
+    body {
+        background-color: tomato;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.max-container-size {
+    max-width: 1200px;
+    margin: auto auto;
+    /* border: 2px solid blue; */
+}
+
+.inner-container {
+    max-width: 1130px;
+    margin: auto auto;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-dir-row {
+    flex-direction: row;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-check {
+    border: 2px dashed blue;
+}
+
+.small-font {
+    font-size: 12px;
+    color: black;
+}
+
+.font10px {
+    font-size: 10px;
+}
+
+
+.lst-styl-non {
+    list-style: none;
+}
+
+.boxshadow {
+    /* box-shadow: 0 8px 16px 0 rgba(236, 12, 12, 0.678);  */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* ----------Header logo-box CSS------------ */
+.logo-box {
+    margin-top: 8px;
+    display: flex;
+    height: 40px;
+}
+
+
+
+
+
+
+/* *********************************** css of MAIN PAGE  ************************************** */
+.main-payment-page {
+    display: grid;
+    grid-template-columns: 25% 43% 28%;
+    /* border: 1px solid tomato; */
+    gap: 2%;
+}
+
+/* ***************** css of LEFT BOX (Parent-Payment Options Box) starts here ****************** */
+.payment-options {
+    /* border: 1px solid red; */
+    margin: 20px auto;
+}
+.payment-options .pay-lists {
+    /* border: 1px solid black; */
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: white;
+}
+
+.credit-debit-cards {
+    padding: 10px;
+    justify-content: flex-start;
+    border-bottom: 1px solid gray;
+    background-color: white;
+}
+.credit-debit-cards img {
+    height: 50px;
+}
+.credit-debit-cards .payment-type {
+    margin-left: 15px;
+}
+.credit-debit-cards .payment-type h4 {
+    color: blue;
+}
+.credit-debit-cards p {
+    font-size: 12px;
+    color: gray;
+}
+/* ***************** css of LEFT BOX (Parent-Payment Options Box) closes here ****************** */
+
+
+
+
+
+/* ************************** css of MIDDLE box (Parent) starts here *************************** */
+/* -------------css of Parent upi-box line---------------- */
+.upi-box {
+    width: 100%;
+    margin: 20px auto;
+    /* border: 1px solid blue; */
+    padding: 20px;
+    background-color: white;
+}
+
+
+/* -------------------css of first line------------------- */
+.upi-box .phone-ready {
+    padding: 10px;
+    color: yellowgreen;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/* ---------------css of upi-id-enter-box----------------- */
+.upi-id-enter-box {
+    border: 1px solid #d8d8d8;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+.upi-id-enter-box h5 {
+    margin: 10px;
+}
+.upi-id-enter-box input {
+    width: 100%;
+    margin: 3px 10px;
+    padding: 10px;
+}
+.upi-id-enter-box .btn {
+    padding: 10px;
+    margin: auto 10px;
+}
+.upi-id-enter-box .btn button {
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #008cff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    /* border: 1px solid tomato; */
+    padding: 10px 15px;
+    border: none;
+    color: white;
+}
+.upi-id-enter-box .pay-images img {
+    height: 25px;
+    margin: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+.upi-id-enter-box .pay-images {
+    margin-top: 10px;
+}
+.upi-id-enter-box .upi-pay-authorize span {
+    font-size: 12px;
+    color: gray;
+    width: 20%;
+    /* border: 1 blackpx solid tomato; */
+    margin: 10px 20px;
+    text-align: center;
+}
+
+
+/* ------------------- css of terms box------------------- */
+.terms {
+    border: 1px solid #33d18f;
+    border-radius: 15px;
+    margin: 20px auto;
+    background-color: #f1f8f5;
+}
+.terms p {
+    margin: 10px;
+    font-size: 12px;
+    color: gray;
+}
+.terms .insurance-section {
+    justify-content: space-between;
+    margin: auto 10px;
+}
+.terms .tnc {
+    margin: auto 10px;
+    justify-content: space-between;
+}
+.terms .tnc a {
+    color: #008cff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.terms .tnc p {
+    color: #008cff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.terms img {
+    height: 20px;  
+}
+
+
+/* ------------------- css of money box------------------- */
+.money {
+    margin: 25px auto;
+}
+.money .final-pay {
+    font-weight: 600;
+    font-size: 20px;
+}
+.money .due {
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+}
+
+
+/* ------------------- css of money box------------------- */
+.privacy {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+.privacy a {
+    text-decoration: none;  
+}
+/* ************************** css of MIDDLE box (Parent) closes here *************************** */
+
+
+
+/* ************************** css of RIGHT box (Parent) starts here *************************** */
+/* ------------------- css of right box------------------- */
+.booking-details, .fare-summary {
+    /* width: 100%; */
+    margin: 20px auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: white;  
+}
+/* -------------- css of booking-details box-------------- */
+.booking-details {
+    height: max-content;
+}
+.one-way-two-way {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+}
+.one-way-two-way p {
+    color: gray;
+    font-size: 12px;
+}
+.booking-details .date {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.flight-box {
+   display: flex;
+   justify-content: space-between;
+}
+.flight-box p {
+    font-size: 12px;
+    color: gray;
+}
+.take-off {
+    display: flex;
+    gap: 10px;
+   
+}
+.flight-box .take-off img {
+    height: 30px;
+}
+
+
+.traveller {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.traveller img {
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50px;
+    
+}
+
+.traveller-details .user-logo {
+    border: 1px solid gray;
+    display: flex;
+}
+
+.traveller-details {
+    margin-top: 10px;
+}
+.traveller-details h4 {
+    margin-bottom: 10px;
+}
+.traveller-details li span{
+   font-size: 12px;
+   color: gray;
+}
+.traveller li {
+    margin-bottom: 10px;
+}
+
+/* -------------- css of fare-summary-box box-------------- */
+.fare-summary {
+    height: max-content;
+}
+.fare-summary .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;  
+}
+.heading p {
+    color: blueviolet;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fare {
+    margin: 10px auto;
+}
+.flight-fare, .other-fare {
+    justify-content: space-between;
+}
+.other-fare {
+    margin-top: 5px;
+}
+.fare p {
+    font-size: 14px;
+}
+.total {
+    justify-content: space-between;  
+    margin: 10px auto;
+}
+
+.lastline a {
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none; 
+}

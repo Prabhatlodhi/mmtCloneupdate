@@ -1,0 +1,96 @@
+
+/* --------------General CSS--------------- */
+
+
+.cardreview-wrap {
+    border-collapse: collapse;
+    width: 450px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 21%);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0 5px 2px;
+    padding: 5px 8px;
+}
+.cardreview-wrap th{
+    text-align: left;
+}
+.cardreview-wrap th, td{
+    padding: 8px 12px;
+    width: 50%;
+}
+
+.rd-popup-content {
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 21%);
+    z-index: 1000;
+    position: relative;
+}
+.rd-popup-box{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 5px;
+}
+
+.spell-check-box {
+    margin: 10px auto;
+    font-size: 13px;
+    color: rgb(100, 100, 100);
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.edit-cnf {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.confirm-btn {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 900;
+    margin-right: 13px;
+    background-image: linear-gradient(to right, rgb(50, 189, 244),rgb(25, 114, 248));
+    box-shadow: 0 1px 5px rgb(0 0 0 / 21%);
+
+}
+.edit {
+    background-color: #fff;
+    border: none;
+    color: rgb(25, 114, 248);
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 21%);
+}
+
+.review-content{
+    max-height: 320px;
+    overflow-y: auto;
+}
+.close-review-box{
+    position: absolute;
+    right: 10px;
+    top: 0;
+   font-size: 30px;
+   font-weight: 200;
+   color: gray;
+   cursor: pointer;
+}

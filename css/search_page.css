@@ -1,0 +1,776 @@
+
+@import "../css/mainpagestyle.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* css of general class  */
+
+.container {
+  max-width: 1440px;
+}
+
+:root {
+  --dark_blue: #041422;
+  --light_blue: #144275;
+}
+
+body {
+  background-color: #e5eef4;
+}
+
+/* header section starts here  */
+
+.search_page_header {
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #041422;
+  position: sticky;
+  top: 10%;
+}
+
+.trip_type {
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e2c39;
+  padding: 8px;
+  font-size: 1rem;
+  height: 5em;
+  width: 170px;
+  border-radius: 6px;
+}
+
+.trip_type_option p:first-child,
+.trip_type_from p:first-child {
+  color: #144cb6;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.trip_type_option p:last-child,
+.trip_type_from p:last-child {
+  margin-bottom: 25px;
+}
+
+.trip_type_option .angle_down i {
+  margin-left: 10px;
+  color: #041422;
+}
+
+.trip_type_option {
+  cursor: pointer;
+}
+
+.header1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.trip_type_from {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* .trip_type_margin{
+    margin-left: 0px;
+} */
+
+.fa-exchange {
+  color: #144cb6;
+}
+
+.trip_type_way {
+  width: 9%;
+}
+
+.search_btn {
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(
+    52deg,
+    rgba(170, 205, 241, 1) 6%,
+    rgba(57, 131, 255, 1) 50%,
+    rgba(69, 91, 252, 1) 79%
+  );
+  color: white;
+  font-size: 1.3rem;
+  height: 2.5em;
+  cursor: pointer;
+}
+
+.header2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+
+.fare_type_view {
+  display: flex;
+  background-color: #213952;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.fare_type {
+  padding: 10px;
+  border-left: 1px solid #0a1c2c;
+  font-size: 0.8rem;
+}
+
+.fare_type label {
+  margin-left: 5px;
+}
+
+.fare_type label span {
+  color: red;
+}
+
+/* side bar section css start here  */
+
+.search_page {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 20px;
+  width: 100%;
+}
+
+.popular_filters {
+  margin-left: 60px;
+  background-color: white;
+  height: 95%;
+  margin-top: 30px;
+}
+
+.popular_filter_heading {
+  margin: 10px 10px;
+}
+
+.popular_airlines {
+  margin: 10px 10px;
+}
+
+.popular_airlines h3 {
+  margin-bottom: 20px;
+}
+
+.popular_filter_heading h3 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.search_page .filter_val {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.search_page .filter_val label {
+  margin-left: 5px;
+  font-size: 0.9rem;
+}
+.search_page .filter_val span {
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+
+.show {
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.one_way_price {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.one_way_price h3 {
+  margin-bottom: 20px;
+}
+
+#silver_bar {
+  height: 5px;
+  background-color: rgb(211, 206, 206);
+  margin: 10px 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#blue_bar {
+  height: 6px;
+  background-color: blue;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.rs_range {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#range2 {
+  margin-right: 10px;
+}
+
+.first_stops {
+  margin: 10px 10px;
+}
+
+.first_stops h3 {
+  margin-bottom: 20px;
+}
+
+.depart_time {
+  margin: 10px 10px;
+}
+
+.depart_for_flex {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin:10px 10px; */
+}
+
+.time_icon {
+  border: 1px solid rgb(211, 206, 206);
+  border-radius: 5px;
+}
+
+.time_icon {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 14vh;
+}
+
+.time_icon1 {
+  margin-left: 0;
+}
+
+.time_icon p {
+  font-size: 0.65rem;
+  margin-bottom: 15px;
+}
+
+.time_icon img {
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.back_top {
+  background-image: linear-gradient(
+    180deg,
+    var(--dark_blue) 30%,
+    var(--light_blue)
+  );
+  height: 50%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  bottom: 20%;
+}
+
+/* sidebar section ends here  */
+
+/* search result section start here  */
+
+.flight_details {
+  /* border:2px solid green; */
+  margin-right: 60px;
+  padding-top: 30px;
+}
+
+.flight_details h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.my_safety {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.my_safety img {
+  height: 40px;
+  width: 40px;
+}
+
+.my_safety p {
+  margin-top: 5px;
+  font-size: 0.73rem;
+}
+
+.side_margin {
+  margin-left: 10px;
+}
+
+.sorted_by {
+  display: flex;
+  background-color: white;
+  margin-top: 10px;
+  box-shadow: 0 8px 6px -6px rgb(189, 185, 185);
+}
+
+.sorted_by button {
+  color: blue;
+  padding: 0 10px;
+  background-color: white;
+  border: none;
+}
+
+.information_display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid grey;
+  padding: 10.7px;
+}
+
+.information_display_last {
+  border-right: 1px solid grey;
+}
+
+.information_display p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.info_table_outer {
+  padding: 10px;
+  background-color: white;
+  margin-top: 2px;
+}
+
+.info_table {
+  display: flex;
+  margin-top: 15px;
+  background-color: rgb(214, 208, 208);
+  padding: 10px;
+}
+
+.info_table p,
+.info_table ul #price {
+  font-weight: bold;
+}
+
+.info_table ul {
+  display: flex;
+  margin-left: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_table ul li {
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 100px;
+  font-size: 0.8rem;
+}
+
+/* flight search result section css start here  */
+
+.blue_lock_box {
+  display: flex;
+  background-color: #e0f9ff;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #329bff;
+  width: 15%;
+  padding: 2px 2px;
+  margin-top: 10px;
+}
+
+.blue_lock_box img {
+  height: 15px;
+  width: 15px;
+}
+
+.blue_lock_box span {
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 1px 4px;
+  margin-left: 2px;
+}
+
+.blue_lock_box p {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.go_first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid grey;
+}
+.go_first_para {
+  margin-left: 10px;
+}
+
+.go_first_para p:first-child {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.go_first_para p:last-child {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.filght_result_section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.go_first_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go_first img {
+  height: 40px;
+  width: 40px;
+}
+
+.flight_info_display {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.flight_time p:first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.flight_time p:last-child {
+  font-size: 0.8rem;
+}
+
+.one_stop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.blue_line {
+  width: 80px;
+  background-color: #51e2c2;
+  border: 1px solid #51e2c2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.one_stop p:last-child {
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.arrival_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrival_info p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.plus_one_day p {
+  font-size: 0.75rem;
+  color: red;
+  margin-left: 8px;
+}
+.plus_one_day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination {
+  font-size: 0.75rem;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.price_details {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.info_btn {
+  background-color: #e0f9ff;
+  border: 1px solid #329bff;
+  padding: 5px;
+  border-radius: 50px;
+  color: #329bff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.cheapest_flight_option {
+  background-color: #b9daf0;
+}
+
+.mmt_super p {
+  background-color: #ffedd1;
+  padding: 5px;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mmt_super p .fa-circle {
+  font-size: 0.7rem;
+  color: #f46c77;
+}
+
+.view_files_details p {
+  text-align: right;
+}
+
+.view_files_details p a {
+  text-decoration: none;
+  color: #67c8ff;
+}
+
+.view_files_details {
+  margin-top: 20px;
+}
+
+.select_return {
+  color: grey;
+}
+
+/* book flight section starts here  */
+
+.book_flight {
+  display: grid;
+  grid-template-columns: 17% auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.book_flight_table {
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f3f6f9;
+}
+
+.book_flight_table_data {
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid grey;
+}
+
+.border_dsplay {
+  background-color: #041422;
+}
+
+.saver {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.fare {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.check_in {
+  font-weight: 600;
+}
+.line_height {
+  line-height: 2;
+}
+
+.line_height::first-line {
+  line-height: 1;
+}
+
+.lock_price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lock_price p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.lock_price button {
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #329bff;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 3px #329bff;
+  color: #329bff;
+  font-size: 1.1rem;
+}
+
+.lock_price button:last-child {
+  background: linear-gradient(to left, #1f77f7, #4ba9fd);
+  color: white;
+}
+
+.seven_options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.seven_options p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.seven_options p span {
+  font-weight: 100;
+}
+
+.last_flight_info_display {
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.trip_arrive,
+.trip_depart {
+  position: relative;
+}
+
+.trip_arrive p:first-child,
+.trip_depart p:first-child {
+  margin-top: 0px;
+}
+
+.arrive_city_input,
+.depart_city_input {
+  outline: none;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+
+  border-radius: 10px;
+  border: none;
+}
+
+.depart_city_container,
+.arrive_city_container {
+  position: absolute;
+  bottom: 0;
+}
+
+#depart_city,
+#arrive_city {
+  outline: none;
+
+  height: 40px;
+  width: 13em;
+  padding: 10px;
+}
+
+#Header_Id {
+  top: 0;
+}
+
+/* trip way options  */
+
+.trip_way {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 2px;
+  left: 70px;
+}
+
+.trip_way ul li {
+  color: grey;
+  padding: 5px;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* ===========================PAGE RESPONSIVENESS STARTS HERE============================== */
+@media screen and (max-width: 821px) {
+  .small_one_wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .five_elements {
+    width: 90%;
+    font-size: 9px;
+    border: 1px solid red;
+  }
+
+  .five_elements h4 {
+    font-size: 0.6rem;
+  }
+
+  .five_elements p {
+    font-size: 0.4rem;
+  }
+
+  .second_footer_part {
+    padding: 5% 12%;
+  }
+}
+
+/* ===========================PAGE RESPONSIVENESS ENDS HERE============================== */

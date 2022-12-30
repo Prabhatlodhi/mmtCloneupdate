@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', 'Lato', sans-serif;
+  font-size: 14px;
+}
+:root {
+  --white-clr: #ffffff;
+  --lightgray: #6D7278;
+  --bg-clr: #e5eef4;
+  --green-clr: #00a19c;
+  --blue-clr: #0084ff;
+  --liteblue: #008cff;
+}
+body{
+  background-color: var(--bg-clr);
+}
+html { 
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: var(--liteblue);
+  padding: 0 8px;
+  font-weight: 300;
+}
+h2{
+  font-size: 1.3rem;
+}
+.blackFont{
+  font-weight: 900;
+  display: inline-block;
+}
+.marginTB15{
+  margin: 15px 0;
+}
+.marginT{
+  margin-top: 15px;
+}
+.padding20{
+  padding: 20px;
+}
+input[type=checkbox], input[type=radio]{
+  box-sizing: border-box;
+  padding: 0;
+  cursor: pointer;
+}
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+.flexJ{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.defaultBox-prop{
+  padding: 20px;
+  box-shadow: 0 3px 30px 0 rgb(0 0 0 / 10%);
+  margin-top: 15px;
+  border-radius: 3px;
+  background-color: var(--white-clr);
+}
+.traveller-container{
+  margin-bottom: 100px;
+}
+.booking-container{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.sticky-header{
+  background-color: #041422;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 0;
+}
+.header-container ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header-container ul li>a{
+  color: hsla(0,0%,100%,.5);
+  font-size: 0.85rem;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.booking-body {
+  position: relative;
+}
+.bg-gradient{
+  background-image: linear-gradient(0deg,#15457b,#051423);
+  min-height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.booking-details{
+  display: flex;
+  justify-content: space-between;
+}
+.ring {
+  border: 1px solid red;
+}
+.booking-details .flight-details{
+  width: 882px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 3px;
+}
+.main-section{
+  width: 882px;
+}
+/* Flights summary section starts here */
+.flights-summary{
+  margin-bottom: 20px;
+  background-color: var(--white-clr);
+  box-shadow: 0 3px 30px 0 rgb(0 0 0 / 10%);
+  border-radius: 3px;
+}
+.flights-summary .summary-trip{
+color: var(--lightgray);
+margin-top: 10px;
+}
+.traveller-det p{
+  color: var(--lightgray);
+}
+.fa-angle-down{
+  margin-left: auto;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+}
+.fa-regular{
+  margin-left: auto;
+  color: var(--blue-clr);
+  font-size: 16px;
+  cursor: pointer;
+}
+.summary-trip h3{
+  margin-right: 10px;
+}
+.traveller-det h2{
+  margin-right: 12px;
+}
+.pickup-car{
+  width: 86px;
+  height: 46px;
+}
+.pd-text{
+  color: var(--green-clr);
+  margin-top: 6px;
+  margin-bottom: 14px;
+}
+.pickup-car img{
+  width: 100%;
+}
+.pick-drop{
+  display: flex;
+  justify-content: space-between;
+}
+.departure-pickup{
+  width: 49%;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 21%);
+  border-radius: 4px;
+  color: var(--lightgray);
+  margin-top: 15px;
+}
+.pickup-checkbox{
+  margin-bottom: 10px;
+}
+.pickup-checkbox input[type=checkbox]{
+  color: red;
+  background-color: #00a19c;
+  margin-right: 8px;
+}
+.cabs{
+  border: none;
+  color: var(--blue-clr);
+  margin-left: 3px;
+}
+.pickup-dt{
+  color: var(--white-clr);
+  background-image: linear-gradient(to left, #17ca8a,#219393);
+  padding: 4px 7px;
+  font-size: 10px;
+  z-index: 2;
+  border-radius: 2px;
+  display: inline-block;
+}
+.drop-airport{
+  margin-left: 23px;
+  margin-right: 25px;
+}
+.drop-fare{
+  padding-top: 10px;
+  margin-left: 25px;
+}
+.drop-fare h3{
+  color: black;
+}
+.arrival-drop{
+  width: 49%;
+}
+.pickup-checkbox select{
+  border: none;
+  color: var(--blue-clr);
+}
+.pickup-checkbox>p{
+  margin-left: 10px;
+}
+.drop-airport1{
+  margin-left: 23px;
+  margin-right: 16px;
+}
+.mysafety-div{
+  margin-top: 20px;
+}
+.mysafety-div img{
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.mysafety-div span{
+  color: var(--blue-clr);
+}
+.exact-location{
+  padding: 10px 20px;
+  background-color: rgb(217, 235, 255);
+  border-radius: 4px;
+  margin-top: 15px;
+}
+.exact-location li {
+   font-size: 12px;
+}
+.courier-bags img{
+  width: 80px;
+  height: 32px;
+}
+.courier-bags-text{
+  color: var(--green-clr);
+  font-weight: 400;
+  padding-top: 5px;
+}
+.courier-type{
+  border: 1px solid  rgb(212, 212, 212);
+  display: inline-block;
+  border-radius: 2px;
+}
+.courier-type li{
+  padding: 10px 15px;
+  list-style: none;
+  display: inline-block;
+  
+}
+.courier-type .surface{
+  border-right: 1px solid  rgb(212, 212, 212);
+}
+.boldtext{
+  font-size: 16px;
+  font-weight: 900;
+  padding-right: 5px;
+}
+.litetext{
+  font-size: 12px;
+}
+.courier-charges{
+  width: 50%;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 21%);
+  padding: 10px;
+  border-radius: 3px;
+}
+.courier-price{
+  margin-top: 10px;
+}
+.courier-price label{
+  font-weight: 700;
+  margin-left: 10px;
+}
+.courier-price p{
+  margin-left: auto;
+  color: var(--blue-clr);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.courier-warning{
+  background-color: #ffedd1;
+  padding: 10px 22px;
+  margin-top: 15px;
+  border-radius: 2px;
+}
+.courier-warning li {
+  font-size: 12px;
+  padding: 3px 0;
+}
+.courier-warning li:first-child{
+  color: red;
+}
+.top-faqs{
+  background-color: var(--white-clr);
+  border-top: 1px solid #dedede;
+  padding: 15px 10px 10px 10px;
+}
+.faq-links a{
+  text-decoration: underline;
+  color: var(--lightgray);
+  font-size: 12px;
+}
+.umbrella{
+  width: 34px;
+  margin-right: 10px;
+}
+.reliance-in{
+  width: 40px;
+  height: 20px;
+  margin-left: auto;
+}
+.medical-text-section{
+  box-shadow: 0 1px 4px rgb(0 0 0 / 21%);
+  margin-top: 15px;
+}
+.medical-cover-text{
+   padding: 12px 10px;
+  border-radius: 4px;
+}
+.medical-cover-text>p{
+  color: var(--lightgray);
+  line-height: 20px;
+}
+.add-btn{
+  border: 1px solid var(--blue-clr);
+  padding: 6px 20px;
+  background-color: var(--white-clr);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 21%);
+  border-radius: 20px;
+  color: var(--blue-clr);
+  margin: 0 15px;
+}
+.donation-section label{
+  font-weight: 600;
+  margin-left: 10px;
+}
+.donation-type{
+  margin-top: 15px;
+}
+.donation-card{
+  display: flex;
+  width: 32.5%;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 21%);
+  padding: 10px;
+  border-radius: 4px;
+}
+.donation-card img{
+  width: 30px;
+}
+.donation-card p{
+  font-size: 12px;
+  padding: 2px 10px;
+}
+.proceed-pay p{
+  color: var(--lightgray);
+  margin-bottom: 12px;
+}
+.proceed-btn{
+  border-radius: 35px;
+  box-shadow: 0 1px 7px 0 rgb(0 0 0 / 22%);
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 11px 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  background-image: linear-gradient(to right, rgb(50, 189, 244),rgb(25, 114, 248));
+}
+
+
+
+ /************************* Right side Fare Summary Section Starts Here ************/
+
+.booking-details .fare-details{
+  width: 296px;
+  position: sticky;
+  top: 65px;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.fare-details .fare--summary{
+  background-color: white;
+  padding: 20px 14px;
+}
+.fare--summary .base--fare{
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.fare--summary .base--fare img{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.fare--summary .base--fare .basefare-section{
+  cursor: pointer;
+}
+.fare--summary .fare--div{
+  padding-left: 25px;
+  margin-top: 12px;
+}
+.fare--div2{
+  padding-left: 25px;
+  margin-top: 12px;
+}
+
+
+.fare--summary .fee--surcharge{
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(194, 194, 194);;
+  
+}
+.fare--summary .fee--surcharge img, .fare--summary .fee--surcharge1 img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.fee--surcharge1{
+  margin-top: 10px;
+}
+
+.fare--summary .fare--div{
+  padding-left: 25px;
+}
+.total--amount{
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
+.promocodes-container{
+  margin-top: 10px;
+}
+.promo-wrap{
+  padding: 15px;
+  border-radius: 2px;
+  background-color: white;
+}
+.promo-codes{
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(0deg,#edd287,#b8860b);
+  margin: -15px -15px 15px;
+  overflow: hidden;
+  padding: 8px 20px;
+  position: relative;
+}
+.promo-text{
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+.promo-text>span{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+}
+.promo-img-wrapper{
+  background-color: white;
+  content: "";
+  width: 80px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  border-radius: 40px 0 0 20px;
+}
+.promo-img{
+  width: 49px;
+  height: 30px;
+  object-fit: contain;
+}
+.promo-wrap .enter-promo{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #d5d5d5;
+  color: black;
+  margin-bottom: 10px;
+}
+.promo-wrap .promo-card{
+  background-color: #f4f4f4;
+  padding: 15px 8px;
+  margin-top: 10px;
+}
+.promo-card .promocode-select{
+  display: flex;
+  align-items: flex-start;
+}
+div.promo-card img{
+  width: 25px;
+}
+#mmtsuper{
+  margin-left: 5px;
+  line-height: 22px;
+}
+
+.mmtpromo-terms{
+  color: #0091ff;
+  cursor: pointer;
+}
+
+.display_column{
+  display: grid;
+  grid-template-rows: auto auto auto;  
+  }
+
+.displayn{
+  display: none;
+}
+
+
+  .adults, .children, .infants{
+    width:130%;
+    display: flex;
+    justify-content:space-between;
+    
+  }
+
+  .promo_message{
+    color:rgb(6, 74, 6);
+    background-color: rgb(194, 250, 194);
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .promo_message h2{
+    font-size: 2em;
+    display: flex;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+  }
+  
