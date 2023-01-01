@@ -4,6 +4,7 @@ const basefare = document.querySelector(".fare--div");
 const basefarePrice = document.querySelector(".basefare-price");
 const imgsrc = document.querySelector(".bfs-img");
 const popupWindow = document.querySelector(".review-popup");
+const spanRupee = document.querySelector(".rupee_span");
 //toggle the image icon
 let toggle = true;
 function imgchange() {
@@ -17,6 +18,8 @@ function imgchange() {
 plusicon.addEventListener("click", (e) => {
   basefare.classList.toggle("displayn");
   basefarePrice.classList.toggle("displayn");
+  
+  console.log("heeeeeeeellllllllo")
   imgchange();
 });
 //surcharge div mani
@@ -31,11 +34,13 @@ const surchargePrice2 = document.querySelector(".surcharge-price2");
 plusicon2.addEventListener("click", (e) => {
   surchargefare.classList.toggle("displayn");
   surchargePrice.classList.toggle("displayn");
+  
 });
 
 plusicon3.addEventListener("click", (e) => {
   surchargefare2.classList.toggle("displayn");
   surchargePrice1.classList.toggle("displayn");
+  spanRupee.classList.toggle("displayn")
 });
 
 // ================ Insurance pop alert =================

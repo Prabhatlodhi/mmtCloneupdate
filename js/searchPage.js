@@ -219,7 +219,7 @@ function displaySearchResult(val){
       <p class="ticket_price">₹ ${val.price}</p>
    </div>
 
-    <button class="info_btn">Book Now <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+    <button class="info_btn">Book Now</button>
 </div>
 </div>
    `

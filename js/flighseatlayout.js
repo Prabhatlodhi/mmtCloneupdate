@@ -140,7 +140,7 @@ function calculateSeatPrice(id, e) {
   } else if (id[0] >= 1 && id[0] <= 6 && (id[1] == "B" || id[1] == "E")) {
     return 900;
   } else if (id[0] >= 7 && id[0] <= 26 && (id[1] == "B" || id[1] == "E")) {
-    return 400;
+    return 500;
   } else if (id[0] >= 27 && id[0] <= 32 && (id[1] == "B" || id[1] == "E")) {
     return 0;
   } else if (id[0] >= 1 && id[0] <= 6 && (id[1] == "C" || id[1] == "D")) {

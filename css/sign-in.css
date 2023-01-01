@@ -18,17 +18,17 @@
 } */
 
 .popup-box {
-    border-radius: 15px;
+    border-radius: 8px;
     background-color: rgba(245, 240, 240, 0.322);
-    width: 410px;
-    height: 480px;
+    width: 450px;
+    height: 550px;
     box-shadow: 0px 0px 3px gray;
      /* css written by taher from down  */
-     position:absolute;
-     top:60%;
+      position:absolute;
+     top:50%;
      left: 50%;
-     transform: translate(-50%,-50%);
-     display: none;
+     transform: translate(-50%,-50%); 
+     display: none; 
      background-color: white;
      z-index: 1000;
 
@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 25px 0;
+    margin: 11px 0;
     background-color: white;
     border-radius: 15px;
 
@@ -83,7 +83,8 @@
 
 .top-section {
     background-color: #eaf5ff;
-    padding: 5px 25px 0px 25px; 
+    padding: 5px 22px 8px 22px;
+    margin-bottom: 5px; 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -309,11 +310,16 @@
     position: absolute;
     top:2%;
     right:3%;
-    background-color: red;
-    font-size: 1.2rem;
+    /* background-color: red; */
+    font-size: .8rem;
     padding: 2px 5px;
     cursor:pointer;
    
+}
+
+.cross_btn:hover{
+ background-color: #53b2fe;
+ border-radius: 50%;
 }
 
 .user-name-display{
@@ -346,7 +352,8 @@
 }
 
 .red-background{
-    background-color: rgba(255, 0, 0, 0.438);
+    background-color: #008cff;
+    color:white;
 }
 
 .green-background{
@@ -358,8 +365,8 @@
 font-size: 1.2rem;
 font-weight: bold;
 padding:10px;
-border-top-left-radius: 15px;
-border-top-right-radius: 15px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
 display: flex;
 align-items: center;
 }
@@ -405,17 +412,17 @@ button{
     margin-top: 20px;
 }
 
-
+ 
 .black_background{
     position: fixed;
-    background-color: rgba(20, 18, 18, 0.7);
+    background-color: rgba(20, 18, 18, 0.6);
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 1000;
   
-}
+} 
 
 .congrats_message{
     font-size: 2rem;
@@ -454,12 +461,12 @@ button{
  .sign_out{
     color:grey;
     font-size: 1.3em;
-    padding:8px;
+    padding:8px 6px;
     width:8%;
     border-radius: 20px;
     position: absolute;
     top:42px;
-    right:80px;
+    right:120px;
     background-color: white;
     text-align: center;
     cursor: pointer;
@@ -471,7 +478,9 @@ button{
 
 
 
+/* =============================OTP CSS======================================== */
 
+ 
 
 
 

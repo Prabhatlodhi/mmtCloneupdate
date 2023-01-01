@@ -180,7 +180,7 @@ const passengerNameDetails = document.querySelector('.passengers_name_detail');
 let passengerArray = JSON.parse(localStorage.getItem("passengerList"));
 
 passengerArray.map((passenger)=>{
-  passengerNameDetails.innerHTML+=`<span>${passenger.firstName}  </span> <span>${passenger.lastName}  </span>`
+  passengerNameDetails.innerHTML+=`<span>${passenger.firstName} </span> <span>${passenger.lastName}  </span>`
 })
 
 const seatValue = document.querySelector('.seat_value');

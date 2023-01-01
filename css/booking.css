@@ -943,9 +943,8 @@ div.promo-card img{
   padding:30px;
 }
 
-
 .adults, .children, .infants{
-  width:125%;
+  width:150%;
   display: flex;
   justify-content:space-between;
   

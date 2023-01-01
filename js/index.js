@@ -282,7 +282,6 @@ ShowMat.addEventListener('click',(e)=>{
   let vartest = e.path
   for(let i=0; i<e.path.length; i++)
     
-
     if(vartest[i].classList.contains('airline_one')){
       document.getElementById('City-Name').innerText = vartest[i].querySelector('h3').innerText;
       document.getElementById('Airport-Code').innerText = vartest[i].querySelector('p').innerText;
@@ -298,6 +297,7 @@ ShowMat.addEventListener('click',(e)=>{
       localStorage.setItem("airportDepartureCode", departureCityCode)
     
     }
+
 
    
   

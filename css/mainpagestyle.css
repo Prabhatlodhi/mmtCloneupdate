@@ -11,7 +11,7 @@
   --justify_Content: justify-content;
   --font_size: 0.75rem;
   --SMALL_font_size: 0.65rem;
-  --background_color_for_top_li: rgb(218, 218, 218);
+  --background_color_for_top_li: #f2f2f2;
   --font_size14: 0.8rem;
   --Box_shadow_0_0_grey: 0px 0px 5px grey;
 
@@ -39,6 +39,10 @@ a {
   align-items: center;
 }
 
+.flex_wrap{
+  flex-wrap: wrap;
+}
+
 .space_between {
   justify-content: space-between;
 }
@@ -57,7 +61,7 @@ a {
   width: 100%;
   height: 4.5em;
 
-  padding: 5px;
+  padding: 9px 0px;
   box-shadow: 0px 0px 10px gray;
   position: fixed;
   top: -100px;
@@ -74,12 +78,20 @@ a {
   font-size: var(--font_size);
   color: var(--font_color);
   margin: 3px 5px;
+  
+}
+
+#Header_Id .allicon li p {
+  padding: 2px 4px;
+}
+#Header_Id .allicon li p:hover {
+  color: white;
+  background-color: #9796f0;
+  border-radius: 10px;
 }
 
 nav .logommt img {
   width: 8rem;
-  
-  /* margin-top: var(--margin_top); */
   margin-right: 1rem;
 }
 
@@ -142,7 +154,7 @@ nav .allicon img {
 /* <!-- ==============PARTS BELOW NAV BLUE BACKGROUND  STARTS FROM HERE========================= --> */
 
 #main_bar_tag {
-  position: relative;
+  /* position: relative; */
   /* top: 70px; */
   /* bottom: 72px; */
   width: 100%;
@@ -245,27 +257,39 @@ section .logommt img {
   font-weight: bold;
   font-size: var(--font_size);
   color: var(--font_color);
-  margin: 5px 10px;
+  margin: 5px 5px;
 }
 
 .allicon .seprate_elements img {
-  width: 38px;
-  height: 38px;
-  margin: 0px 15px;
+  width: 40x;
+  height: 42px;
+  margin: 0px 14px;
+  padding: 3px;
   /* margin-top: var(--margin_top); */
 }
 
-/* .seprate_elements p{
-  
-  background-color: #4a65dd;
+.top_nav_bar li img:hover{
+  border: 1px solid rgb(182, 85, 182);
+  border-radius: 7px;
+}
+
+.top_nav_bar p{
+  margin-top: 3px;
+}
+
+.top_nav_bar p:hover{
   color: white;
+  background-color: #9796f0;
   border-radius: 10px;
-   padding: 1px;
-} */
+}
+
+.seprate_elements p{
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
 
 .mid_portion {
-  padding: 8px 30px;
-  width: 70%;
+  width: 65%;
   margin: 0px auto;
   box-shadow: var(--Box_shadow_0_0_grey);
   border-radius: 10px;
@@ -274,12 +298,23 @@ section .logommt img {
 
   top: 40px;
   z-index: 2;
+   
 }
 
 .all_radio_btn {
   padding: 0px 25px;
   padding-bottom: 5px;
   padding-right: 50px;
+}
+
+.all_radio_btn label{
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: gray;
+}
+
+.all_radio_btn label:hover{
+  color: black;
 }
 
 .all_radio_btn li {
@@ -292,6 +327,7 @@ section .logommt img {
   font-weight: bold;
   font-size: var(--font_size14);
   border: 1px solid rgb(209, 209, 209);
+  cursor: pointer;
 }
 
 .all_radio_btn li span {
@@ -326,7 +362,7 @@ input[type="radio"] {
 .mid_part {
   width: 93%;
   margin-top: 20px;
-  border: 1px solid gray;
+  border: 1px solid rgb(194, 194, 194);
   border-radius: 10px;
   margin: 0px 40px;
   justify-content: left;
@@ -395,27 +431,42 @@ input[type="radio"] {
    
 }
 
-.widthtt {
+.CalenderBox {
   width: 15%;
    
 }
 
 .all_Box {
   position: relative;
-  min-height: 150px;
-  padding-top: 2em;
+  min-height: 120px;
+  padding-top: 1em;
   padding-left: 1em;
-  border-right: 1px solid gray;
+  border-right: 1px solid rgb(208, 208, 208);
 }
 
+.all_Box:hover{
+  background-color: #eaf5ff;
+}
+
+.all_Box h4{
+  margin-bottom: 4px;
+  
+}
 .plane_icon{
   font-size: 22px;
   margin: 5px 10px;
    
 }
 
-.all_Box span {
-  margin-left: 8px;
+.Dateposition{
+  position: relative;
+  right: 25px;
+}
+
+.month_name {
+  position: relative;
+  left: 3px;
+  padding-right: 3px;
 }
 
 .all_Box strong {
@@ -427,7 +478,8 @@ input[type="radio"] {
 }
 
 .mid_part h1 {
-  font-size: 1.5em;
+  font-size: 2.3em;
+  font-weight: bolder;
 }
 
 #golden_text{
@@ -436,8 +488,9 @@ input[type="radio"] {
 }
 
  
-.all_Box_left {
-  padding-left: 5px;
+.rightMost {
+width: 225px;
+  
   /* border-left: 1px solid gray; */
 }
 
@@ -455,7 +508,7 @@ input[type="radio"] {
 .mid_portion_li .One_radio {
   margin: 5px 1px;
   font-size: var(--font_size);
-  background-color: rgb(204, 204, 204);
+  background-color: var(--background_color_for_top_li);
   padding: 5px 5px;
 }
 
@@ -466,22 +519,18 @@ input[type="radio"] {
 .search_button {
   margin: 0px auto;
   position: relative;
-  top: 20px;
+  top: 23px;
 }
 
 .search_button button {
-  width: 12rem;
-  height: 50px;
+  width: 13.5rem;
+  height: 45px;
   border: none;
-  font-size: 22px;
+  font-size: 25px;
+  font-weight: bold;
   border-radius: 50px;
-  background: rgb(170, 205, 241);
-  background: linear-gradient(
-    52deg,
-    rgba(170, 205, 241, 1) 6%,
-    rgba(57, 131, 255, 1) 50%,
-    rgba(69, 91, 252, 1) 79%
-  );
+  /* background: rgb(170, 205, 241); */
+  background:linear-gradient(93deg,#53b2fe,#065af3);
   color: white;
 }
 
@@ -631,7 +680,7 @@ input[type="radio"] {
 .slider {
   width: 100%;
   max-width: 68rem;
-  height: 26rem;
+  height: 28rem;
   margin: 20px;
   text-align: center;
   border-radius: 20px;
@@ -677,8 +726,8 @@ input[type="radio"] {
 
 .slide .arrow_new {
   position: absolute;
-  /* top: 48%; */
-  width: 25px;
+  top: 49%;
+   width: 25px;
   height: 25px;
   border: solid black;
   border-width: 0 4px 4px 0;
@@ -695,7 +744,7 @@ a.slide__next {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   right: 5%;
-}
+} 
 
 /* <!-- ===============SLIDER ENDS FROM HERE========================= --> */
 /* <!-- ===============SCANNED PORTION ENDS FROM HERE========================= -->  */
@@ -824,7 +873,7 @@ a.slide__next {
 }
 
 .three_wrapper {
-  padding: 10px 67px;
+  padding: 10px 55px;
 
   margin: 0px auto;
 }
@@ -840,7 +889,7 @@ footer {
 .footer_part_one {
   width: var(--width_80per);
   margin: 0px auto;
-  padding: 5px 30px;
+  padding: 5px 0px;
 }
 
 .footer_part_one ul li {
@@ -864,7 +913,7 @@ footer {
 
 .second_footer_part {
   background-color: rgb(237, 237, 237);
-  padding: 5% 12%;
+  padding: 5% 10%;
   width: 100%;
   margin: 0px auto;
 }
@@ -882,6 +931,10 @@ footer {
   font-size: var(--font_size14);
 }
 
+/* .individual_box{
+  width: 100%;
+  border: 2px solid red;
+} */
 /* ===========================FOOTER PART TWO ENDS HERE=========================== */
 .Last_social_icon {
   width: 100%;
@@ -1254,3 +1307,5 @@ font-size: 9px;
 
 
 /* ===========================PAGE RESPONSIVENESS ENDS HERE============================== */
+
+

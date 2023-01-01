@@ -75,7 +75,7 @@ function reset() {
     verifyInput.style.borderColor = "black";
     otpInput.style.borderColor = "black";
 
-    loginPopUp.style.height="480px";
+    loginPopUp.style.height="550px";
 
 
 }
@@ -88,10 +88,6 @@ function login() {
   otpSection.classList.add("hidden");
   signUpSection.classList.add("hidden");
   crossButton.classList.remove('hidden');
-
-
- 
-
 }
 
 function disappear() {
@@ -224,6 +220,7 @@ function createAccount(e){
     signUpSection.classList.add("hidden");
     crossButton.classList.add('hidden');
     loginPopUp.style.backgroundColor = "transparent"
+    loginPopUp.style.boxShadow = "none"
     
     
     setTimeout(()=>{

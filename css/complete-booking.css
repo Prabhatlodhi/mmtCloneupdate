@@ -542,7 +542,7 @@ div.promo-card img{
 
 
   .adults, .children, .infants{
-    width:130%;
+    width:150%;
     display: flex;
     justify-content:space-between;
     

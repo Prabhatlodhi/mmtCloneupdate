@@ -24,7 +24,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   </head>
   <body>
     <!-- =============NAV BAR PORTION STARTS FROM HERE====================== -->
@@ -138,7 +137,7 @@
         <!-- ==================TOP FOUR ADS AND LOGIN BTN STARTS FROM HERE====================== -->
         <div class="top_element flex rin">
           <div class="logommt rin">
-            <img src="./images/homepageallimages/logo@2x.png" alt="" />
+            <img src="./images/homepageallimages/logo2n.png" alt="" />
           </div>
 
           <div class="flex rin">
@@ -278,18 +277,18 @@
             <div class="all_radio_btn">
               <ul>
                 <li>
-                  <label for="oneway"></label>
-                  <input name="oneway" type="radio" checked /><span>ONE WAY</span>
+                  <input name="tripSide" type="radio" id="oneway" checked />
+                  <label for="oneway">ONE WAY</label>
                 </li>
 
                 <li>
-                  <label for="oneway"></label>
-                  <input name="oneway" type="radio" /><span>ROUND TRIP</span>
+                  <input name="tripSide" type="radio" id="roundTrip"/>
+                  <label for="roundTrip">ROUND TRIP</label>
                 </li>
 
                 <li>
-                  <label for="oneway"></label>
-                  <input name="oneway" type="radio" /><span>MULTICITY</span>
+                  <input name="tripSide" type="radio" id="multicity" />
+                  <label for="multicity">MULTICITY</label>
                 </li>
               </ul>
             </div>
@@ -330,7 +329,7 @@
              </div>
              </div> -->
              
- <!-- ==========WRAPPER======================== -->
+      <!-- ==========WRAPPER======================== -->
     
               
          </div>
@@ -376,32 +375,31 @@
              </div>
              </div> -->
              
- <!-- ==========WRAPPER======================== -->
-    
-              
-         </div>
-          
-     </div>
-       <!-- ============================================== -->
-         </div>
+                <!-- ==========WRAPPER======================== -->
+                    
+                              
+                        </div>
+                    </div>
+                      <!-- ============================================== -->
+                        </div>
 
-            <div class="all_Box widthtt" id="Section_to">
+            <div class="all_Box CalenderBox" id="Section_to">
               
               <h4>DEPARTURE <i class="fa fa-angle-down" style="font-size:20px;color:rgb(54, 82, 193)"></i> </h4>
               <div class="error_date" style="color:red; display: none;">*select day name</div>
-              <div class="flex"> 
+              <div class="flex Dateposition"> 
               <h1 class="month_day">26 </h1> <span class="month_name"> Jan </span><span class="year_number">2023</span>
             </div>
               <p class="day_to_display">Thu</p>
             </div>
 
-            <div class="all_Box widthtt">
+            <div class="all_Box CalenderBox">
               <h4>RETURN <i class="fa fa-angle-down" style="font-size:20px;color:rgb(54, 82, 193)"></i></h4>
               <!-- <h1>Delhi</h1> -->
               <p>Tap to add the date</p>
             </div>
 
-            <div class="all_Box left" style="border: none;" id="Travellers_count">
+            <div class="all_Box rightMost" style="border: none;" id="Travellers_count">
               <h4>TRAVELLERS & CLASS <i class="fa fa-angle-down" style="font-size:20px;color:rgb(54, 82, 193)"></i></h4>
                
                 <div  >
@@ -432,61 +430,59 @@
 
             <div class="flex rin One_radio">
               <div class="rin Radio_circle">
-                <label for="oneway"></label>
-                <input name="oneway" type="radio" />
+                <input name="discount" id="regularDiscount" type="radio" checked />
               </div>
-                <div>
-                  <span>Regular <br> Fares</span>
+              <div>
+                  <label for="regularDiscount"><span>Regular <br> Fares</span></label>
                 </div>
             </div>
 
             <div class="flex rin One_radio">
               <div class="rin Radio_circle">
-                <label for="oneway"></label>
-                <input name="oneway" type="radio" />
+                <input name="discount" id="armedForces" type="radio" />
               </div>
-                <div>
-                  <span>Armed Forces <br> Fares</span>
+              <div>
+                  <label for="armedForces" ><span>Armed Forces <br> Fares</span></label>
+                  
                 </div>
             </div>
 
             <div class="flex rin One_radio">
               <div class="rin Radio_circle">
-                <label for="oneway"></label>
-                <input name="oneway" type="radio" />
+                <input name="discount" type="radio" id="studentFare"/>
               </div>
-                <div>
-                  <span>Student <br> Fares</span>
+              <div>
+                  <label for="studentFare"><span>Student <br> Fares</span></label>
                 </div>
             </div>
 
             <div class="flex rin One_radio">
               <div class="rin Radio_circle">
-                <label for="oneway"></label>
-                <input name="oneway" type="radio" />
+                <input name="discount" type="radio" id="seniorCitizen" />
               </div>
-                <div>
-                  <span>Senior Citizen <br> Fares</span>
+              <div>
+                  <label for="seniorCitizen"><span>Senior Citizen <br> Fares</span></label>
+                  
                 </div>
             </div>
 
             <div class="flex rin One_radio">
               <div class="rin Radio_circle">
-                <label for="oneway"></label>
-                <input name="oneway" type="radio" />
+                <input name="discount" type="radio" id="docternurses"/>
               </div>
-                <div>
-                  <span>Doctors & Nurses<br> Fares</span>
+              <div>
+                  <label for="docternurses"><span>Doctors & Nurses<br> Fares</span></label>
+                  
                 </div>
             </div>
 
             <div class="flex rin One_radio">
               <div class="rin Radio_circle">
-                <label for="oneway"></label>
-                <input name="oneway" type="radio" />
+                <input name="discount" type="radio" id="doubleSeat"/>
               </div>
-                <div>
-                  <span>Double Seat <br> Fares</span>
+              <div>
+                  <label for="doubleSeat"> <span>Double Seat <br> Fares</span></label>
+                 
                 </div>
             </div>
 
@@ -500,23 +496,23 @@
 
               <div class="backgrey"> 
                 <div class="flex">
-                  <h6>New Delhi</h6>
-                  <i class="fa fa-arrow-right" style="color: blue; font-size:11px; margin: 0px 8px;"></i>
-                  <h6>New Delhi</h6>
+                  <h6>New Delhi </h6>
+                  <i class="fa fa-arrow-right" style="color: rgb(0, 0, 0); font-size:11px; margin: 0px 8px;"></i>
+                  <h6>Banglore</h6>
                 </div>
                 <div>
-                  <h6>23 Jan 23</h6>
+                  <h6>19 Jan 23</h6>
                 </div>
               </div>
 
               <div  class="backgrey"> 
                 <div class="flex">
-                  <h6>New Delhi</h6>
-                  <i class="fa fa-arrow-right"  style="color: blue; font-size:11px; margin: 0px 8px;"></i>
-                  <h6>New Delhi</h6>
+                  <h6>Kolkata</h6>
+                  <i class="fa fa-arrow-right"  style="color: rgb(0, 0, 0); font-size:11px; margin: 0px 8px;"></i>
+                  <h6>Jabalpur</h6>
                 </div>
                 <div>
-                  <h6>23 Jan 23</h6>
+                  <h6>21 Jan 23</h6>
                 </div>
               </div>
 
@@ -607,6 +603,8 @@
               <div class="slider">
                 <div class="slides">
                   <div id="slides__1" class="slide">
+
+                    <span class="slide__text"></span>
                     <div class="flex rin ads_box">
                       <div class="image_cont">
                         <div>
@@ -617,13 +615,12 @@
                         </div>
                         <p>T&C Apply</p>
                       </div>
-
                       <div class="div_text_content">
                         <p>Lorem ipsum dolor sit.</p>
                         <h2>Lorem ipsum dolor sit amet.</h2>
                         <p>Lorem ipsum dolor sit.</p>
                         <a
-                          href="./html/suhana-safar-sale.html"
+                          href="./html/pleasant-journey-sale.html"
                           target="_blank"
                           class="font_color"
                           >View Details</a
@@ -641,7 +638,6 @@
                         </div>
                         <p>T&C Apply</p>
                       </div>
-
                       <div class="div_text_content">
                         <p>Lorem ipsum dolor sit.</p>
                         <h2>Lorem ipsum dolor sit amet.</h2>
@@ -657,16 +653,9 @@
                       </div>
                     </div>
 
-                    <a
-                      class="slide__prev arrow_new"
-                      href="#slides__4"
-                      title="Prev"
-                    ></a>
-                    <a
-                      class="slide__next arrow_new"
-                      href="#slides__2"
-                      title="Next"
-                    ></a>
+
+                    
+
 
                     <div class="flex rin ads_box">
                       <div class="image_cont">
@@ -746,17 +735,7 @@
                       </div>
                     </div>
 
-                    <a
-                      class="slide__prev arrow_new"
-                      href="#slides__1"
-                      title="Prev"
-                      id="slider_id"
-                    ></a>
-                    <a
-                      class="slide__next arrow_new"
-                      href="#slides__3"
-                      title="Next"
-                    ></a>
+                   
 
                     <div class="flex rin ads_box">
                       <div class="image_cont">
@@ -811,7 +790,7 @@
 
                       <div class="div_text_content">
                         <p>Lorem ipsum dolor sit.</p>
-                        <h2>Lorem ipsum.</h2>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
                         <p>Lorem ipsum dolor sit.</p>
                         <p>View Details</p>
                       </div>
@@ -836,17 +815,8 @@
                       </div>
                     </div>
 
-                    <!-- <span class="slide__text">33</span> -->
-                    <a
-                      class="slide__prev arrow_new"
-                      href="#slides__2"
-                      title="Prev"
-                    ></a>
-                    <a
-                      class="slide__next arrow_new"
-                      href="#slides__4"
-                      title="Next"
-                    ></a>
+                     
+                    
 
                     <div class="flex rin ads_box">
                       <div class="image_cont">
@@ -900,7 +870,7 @@
 
                       <div class="div_text_content">
                         <p>Lorem ipsum dolor sit.</p>
-                        <h2>Lorem ipsum.</h2>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
                         <p>Lorem ipsum dolor sit.</p>
                         <p>View Details</p>
                       </div>
@@ -924,16 +894,7 @@
                         <p>View Details</p>
                       </div>
                     </div>
-                    <a
-                      class="slide__prev arrow_new"
-                      href="#slides__3"
-                      title="Prev"
-                    ></a>
-                    <a
-                      class="slide__next arrow_new"
-                      href="#slides__1"
-                      title="Prev"
-                    ></a>
+                    
                     <div class="flex rin ads_box">
                       <div class="image_cont">
                         <div>
@@ -947,7 +908,7 @@
 
                       <div class="div_text_content">
                         <p>Lorem ipsum dolor sit.</p>
-                        <h2>Lorem ipsum.</h2>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
                         <p>Lorem ipsum dolor sit.</p>
                         <p>View Details</p>
                       </div>
@@ -971,14 +932,19 @@
                         <p>View Details</p>
                       </div>
                     </div>
+
+
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- ===============SLIDER ENDS FROM HERE========================= -->
+      </div> 
+     <!-- ===============SLIDER ENDS FROM HERE========================= --> -->
+
+      
 
       
       
@@ -1010,9 +976,12 @@
           <div class="qrscan flex rin">
             <div class="text_content_scanner"> 
             <p>MORE WAYS TO GET THE APP</p>
-            <button><img src="./images/homepageallimages/googleplay.png" alt=""></button>
+            <a href="https://play.google.com/store/apps/details?id=com.makemytrip&%24web_only=true&_branch_match_id=1064830772097938559&_branch_referrer=H4sIAAAAAAAAAw3KSQoAIAgAwB%2Flvd9IBkm5YEL0%2B5rzjEzfFQDdF%2BvcRXB2uRnspZlAB1QKY%2FqB7OgypAe6NG0fNAAAAA%3D%3D" target="_blank"><button><img src="./images/homepageallimages/googleplay.png" alt=""></button></a>
+            
             <div>
-              <button><img src="./images/homepageallimages/app store.png" alt=""></button>
+              <a target="_blank" href="https://apps.apple.com/us/app/makemytrip/id530488359?%24web_only=true&_branch_match_id=1064830772097938559&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywoyMnMyy7Wy03MTs2tLCnKLNBLzs%2FVT9XPzC8GSqbkl%2Bfl5CemAABMVDWbMAAAAA%3D%3D">
+                <button><img src="./images/homepageallimages/app store.png" alt=""></button>
+              </a>
             </div>
           </div>
           <div> 
@@ -1053,8 +1022,8 @@
               <img src="./images/homepageallimages/bottomw.webp" alt="" />
             </div>
             <div class="align_top">
-              <h3>Chennai Flight</h3>
-              <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
+              <h3>Kashmir Flight</h3>
+              <span>Kashmir Tourism, Kashmir Tourism Packages</span>
             </div>
           </div>
 
@@ -1063,8 +1032,8 @@
               <img src="./images/homepageallimages/bottomsmall1.webp" alt="" />
             </div>
             <div class="align_top">
-              <h3>Chennai Flight</h3>
-              <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
+              <h3>Andaman Flight</h3>
+              <span>Andaman Tourism, Andaman Packages</span>
             </div>
           </div>
 
@@ -1073,8 +1042,8 @@
               <img src="./images/homepageallimages/bottomsmall2.webp" alt="" />
             </div>
             <div class="align_top">
-              <h3>Chennai Flight</h3>
-              <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
+              <h3>Ladakh Flight</h3>
+              <span>Via Ladakh Tourism, Ladakh best Packages </span>
             </div>
           </div>
         </div>
@@ -1085,8 +1054,8 @@
               <img src="./images/homepageallimages/bottomsmall3.webp" alt="" />
             </div>
             <div class="align_top">
-              <h3>Chennai Flight</h3>
-              <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
+              <h3>North East Flight</h3>
+              <span>Via - North East Tourism, North India Packages</span>
             </div>
           </div>
 
@@ -1095,7 +1064,7 @@
               <img src="./images/homepageallimages/bottomsmall4.webp" alt="" />
             </div>
             <div class="align_top">
-              <h3>Chennai Flight</h3>
+              <h3>Delhi Flight</h3>
               <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
             </div>
           </div>
@@ -1106,7 +1075,7 @@
             </div>
             <div class="align_top">
               <h3>Chennai Flight</h3>
-              <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
+              <span>Via - Delhi, Mumbai, Coimbatore, Madurai  </span>
             </div>
           </div>
         </div>
@@ -1117,8 +1086,8 @@
               <img src="./images/homepageallimages/bottomsmall6.webp" alt="" />
             </div>
             <div class="align_top">
-              <h3>Chennai Flight</h3>
-              <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
+              <h3>Maldives Flight</h3>
+              <span>Via - Maldives Tour Packages , Maldives Packages</span>
             </div>
           </div>
 
@@ -1127,8 +1096,8 @@
               <img src="./images/homepageallimages/bottomsmall7.webp" alt="" />
             </div>
             <div class="align_top">
-              <h3>Chennai Flight</h3>
-              <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
+              <h3>Dubai Flight</h3>
+              <span>Via -  Dubai Tour Packages , Dubai Packages</span>
             </div>
           </div>
 
@@ -1137,8 +1106,8 @@
               <img src="./images/homepageallimages/bottomsmall8.webp" alt="" />
             </div>
             <div class="align_top" >
-              <h3>Chennai Flight</h3>
-              <span>Via - Delhi, Mumbai, Coimbatore, Madurai</span>
+              <h3>Rajasthan Flight</h3>
+              <span>Via - North East Tour , North East Tourism</span>
             </div>
           </div>
         </div>
@@ -1245,7 +1214,7 @@
         </div>
 
         <div>
-          <h3>Why MakeMyTrip?</h3>
+          <h3>Booking Flights with MakeMyTrip</h3>
           <p>
             Established in 2000, MakeMyTrip has since positioned itself as one
             of the leading companies, providing great offers, competitive
@@ -1261,7 +1230,7 @@
         </div>
 
         <div>
-          <h3>Why MakeMyTrip?</h3>
+          <h3>Domestic Flights with MakeMyTrip</h3>
           <p>
             Established in 2000, MakeMyTrip has since positioned itself as one
             of the leading companies, providing great offers, competitive
@@ -1271,7 +1240,7 @@
             site or mobile app can be done with complete ease and no hassles at
             all. We also deliver amazing offers, such as Instant Discounts, Fare
             Calendar, MyRewardsProgram, MyWallet, and many more while updating
-            them from time to time to better suit our customers’ evolving needs
+            them from time to time to better suit our customers evolving needs
             and demands.
           </p>
         </div>
@@ -1279,8 +1248,9 @@
 
       <div class="Last_social_icon flex space_between">
         <div class="all_icon">
-          <i class="fa fa-twitter" style="font-size: 33px; color: white"></i>
-          <i class="fa fa-facebook-f" style="font-size: 33px; color: white"></i>
+          <a href="https://twitter.com/makemytrip/" target="_blank"> <i class="fa fa-twitter" style="font-size: 33px; color: white"></i></a>
+         
+          <a href="https://www.facebook.com/makemytrip/" target="_blank"><i class="fa fa-facebook-f" style="font-size: 33px; color: white"></i></a>
         </div>
 
         <div>
@@ -1329,7 +1299,7 @@
           </div>
           <button class="sign-up-button">Sign-up</button>
           <div class="login-img">
-            <img src="../images/google.jpg" alt="" />
+            <!-- <img src="../images/google.jpg" alt="" /> -->
           </div> 
           <div class="terms-conditions">
             <p class="para">
@@ -1388,7 +1358,7 @@
     
     
         <!-- this is floating msgs in top-section -->
-        <div class="para new-para">
+        <div class="para new-para" >
           <p id="back-click">Back</p>
     
           <p>OTP has been sent</p>
@@ -1431,7 +1401,7 @@
   </section> 
   
     <section class="congrats-section  hidden">
-      <div class='success_msg'><h1 class='congrats_message'> <img class='green_tick' src='../makeMyTripClone/icons/tick icon/green_tick.webp'>Congratulations!!! New Account Created!!</h1></div>
+      <div class='success_msg'><h1 class='congrats_message'>Congratulations!!! New Account Created!!</h1></div>
      </section> 
     
      <div class="cross_btn">X</div>
@@ -1445,7 +1415,7 @@
       <span class="month-picker" id="month-picker"> May </span>
       <div class="year-picker" id="year-picker">
         <span class="year-change" id="pre-year">
-          <pre><</pre>
+          <pre></pre>
         </span>
         <span id="year">2020 </span>
         <span class="year-change" id="next-year">
@@ -1557,141 +1527,17 @@
   <h4>Sign out</h4>
  </div>
 
- 
-      
- <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="flex rin ads_box">
-        <div class="image_cont">
-          <div>
-            <img
-              src="./images/homepageallimages/slider_images_01.webp"
-              alt=""
-            />
-          </div>
-          <p>T&C Apply</p>
-        </div>
 
-        <div class="div_text_content">
-          <p>Lorem ipsum dolor sit.</p>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit.</p>
-          <a
-            href="./html/suhana-safar-sale.html"
-            target="_blank"
-            class="font_color"
-            >View Details</a
-          >
-        </div>
-      </div>
-
-      <div class="flex rin ads_box">
-        <div class="image_cont">
-          <div>
-            <img
-              src="./images/homepageallimages/slider_images_01.webp"
-              alt=""
-            />
-          </div>
-          <p>T&C Apply</p>
-        </div>
-
-        <div class="div_text_content">
-          <p>Lorem ipsum dolor sit.</p>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit.</p>
-          <a
-            href="./html/suhana-safar-sale.html"
-            target="_blank"
-            class="font_color"
-            >View Details</a
-          >
-        </div>
-      </div>
-
-      <div class="flex rin ads_box">
-        <div class="image_cont">
-          <div>
-            <img
-              src="./images/homepageallimages/slider_images_01.webp"
-              alt=""
-            />
-          </div>
-          <p>T&C Apply</p>
-        </div>
-
-        <div class="div_text_content">
-          <p>Lorem ipsum dolor sit.</p>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit.</p>
-          <a
-            href="./html/suhana-safar-sale.html"
-            target="_blank"
-            class="font_color"
-            >View Details</a
-          >
-        </div>
-      </div>
-
-      <div class="flex rin ads_box">
-        <div class="image_cont">
-          <div>
-            <img
-              src="./images/homepageallimages/slider_images_01.webp"
-              alt=""
-            />
-          </div>
-          <p>T&C Apply</p>
-        </div>
-
-        <div class="div_text_content">
-          <p>Lorem ipsum dolor sit.</p>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit.</p>
-          <a
-            href="./html/suhana-safar-sale.html"
-            target="_blank"
-            class="font_color"
-            >View Details</a
-          >
-        </div>
-      </div>
-
-
-
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./images/homepageallimages/blueImages/pexels-harvey-sapir-1054666.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> -->
-
- <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
-    -->
+      
+ 
+
+ 
 
         <script src="js/login_page.js"></script>
         <script src="js/index.js"></script>
         <script src="js/dropdown.js"></script>
+        
 
   </body>
 </html>

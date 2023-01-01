@@ -40,7 +40,11 @@ a {
   justify-content: center;
   align-items: center;
 }
-
+.flexJ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .space_between {
   justify-content: space-between;
 }
@@ -57,7 +61,7 @@ a {
 /* =======================Header CSS Starts here =================== */
 
 #Header_Id {
-  width: 100%;
+  width: 110%;
   height: 70px;
 
   padding: 5px 100px;
@@ -65,6 +69,11 @@ a {
 
   background-color: white;
   transform: 0.5s all;
+}
+
+.nav_wrapper{
+  position: relative;
+  right: 70px;
 }
 
 .allicon li {
@@ -250,11 +259,12 @@ nav .allicon img {
 
 .seating_structure {
   position: absolute;
-  top: 750px;
-  left: 230px;
 
-  width: 150px;
-  height: 180px;
+  top: 710px;
+  left: 220px;
+
+  width: 130px;
+  height: 160px;
 }
 
 #seating_layout {
@@ -266,8 +276,7 @@ nav .allicon img {
 }
 
 table {
-  width: 43.8%;
-
+  width: 348px;
   border-spacing: 5px;
   border-collapse: separate;
   margin: 0px auto;
@@ -322,12 +331,8 @@ table {
   outline: none;
   color: white;
   font-weight: bold;
-  background: linear-gradient(
-    52deg,
-    rgba(170, 205, 241, 1) 6%,
-    rgba(57, 131, 255, 1) 50%,
-    rgba(69, 91, 252, 1) 79%
-  );
+   
+  background:linear-gradient(93deg,#53b2fe,#065af3);
   border-radius: 19px;
   cursor: pointer;
 }
@@ -559,11 +564,6 @@ h2 {
   display: flex;
   align-items: center;
 }
-.flexJ {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .seat_info_box {
   position: absolute;
@@ -587,3 +587,19 @@ h2 {
   position: relative;
   left: -25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
