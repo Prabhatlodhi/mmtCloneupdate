@@ -52,7 +52,7 @@ flightDuration.innerText = bookingDetails.flight_duration;
 
 
 let totalPassengers = localStorage.getItem("sum") ?? 0;
-let totalAdults = localStorage.getItem("adults") ?? 0;
+let totalAdults = localStorage.getItem("adults") ?? 1;
 let totalChildren = localStorage.getItem("children") ?? 0;
 let totalInfants = localStorage.getItem("infants") ?? 0;
 

@@ -27,13 +27,13 @@ let dayNumber = localStorage.getItem("day");
 let departMonth = localStorage.getItem("month");
 let departYear = localStorage.getItem("year");
 
-let departAirport =localStorage.getItem("airportDeparture")
-let departureCity = localStorage.getItem("cityDeparture")
-let departCode = localStorage.getItem("airportDepartureCode")
+let departAirport =localStorage.getItem("airportDeparture") ?? "Indira Gandhi International Airport"
+let departureCity = localStorage.getItem("cityDeparture") ?? "Delhi"
+let departCode = localStorage.getItem("airportDepartureCode") ?? "DEL"
 
-let arrivalCity = localStorage.getItem("cityLand")
-let arrivalAirport = localStorage.getItem("airportLand")
-let arrivalCode = localStorage.getItem("codeLand");
+let arrivalCity = localStorage.getItem("cityLand") ?? "Kolkata"
+let arrivalAirport = localStorage.getItem("airportLand") ?? "NSCB International Airport"
+let arrivalCode = localStorage.getItem("codeLand") ?? "CCU"
 
 departCityDisplay.innerText = departureCity ?? "Delhi";
 arriveCityDisplay.innerText = arrivalCity ?? "Kolkata";
@@ -175,6 +175,9 @@ function displaySearchResult(val){
 
    let image_number=dynamicImageName[val.flight];
 
+
+
+
    flightInfoDisplay.innerHTML+=`
    <div class="wrapper_search">
    <div class="blue_lock_box">
@@ -197,7 +200,7 @@ function displaySearchResult(val){
       <p class="arrival_airport hidden">${val.arrive_airport_name}</p>
       <p class="arrival_airport hidden">${val.depart_IATA_code}</p>
       <p class="arrival_airport hidden">${val.arrive_IATA_code}</p>
-      <p class="departure_city_name">${val.depart_city_name}</p>
+      <p class="departure_city_name">${val.depart_city_name} </p>
    </div>
    <div class="one_stop">
       <p class="total_duration">${val.total_duration}</p>
@@ -223,7 +226,9 @@ function displaySearchResult(val){
 </div>
 </div>
    `
-
+if(document.querySelector('.departure_city_name').innerText==null){
+   document.querySelector('.departure_city_name').innerText="Delhi"
+}
   
 }
 
