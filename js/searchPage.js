@@ -35,8 +35,8 @@ let arrivalCity = localStorage.getItem("cityLand")
 let arrivalAirport = localStorage.getItem("airportLand")
 let arrivalCode = localStorage.getItem("codeLand");
 
-departCityDisplay.innerText = departureCity;
-arriveCityDisplay.innerText = arrivalCity;
+departCityDisplay.innerText = departureCity ?? "Delhi";
+arriveCityDisplay.innerText = arrivalCity ?? "Kolkata";
 
 
 

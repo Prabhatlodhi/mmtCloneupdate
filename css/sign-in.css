@@ -114,7 +114,7 @@
     border-radius: 5px;  
 }
 
-.continue, .otp-button, .sign-up-button, .create-account-button {
+.continue, .otp-button, .sign-up-button, .create-account-button{
     font-size: 14px;
     font-weight: bold;
     background-color: #008cff;
@@ -123,6 +123,52 @@
     border-radius: 7px;
     border: none;   
 }
+
+.send_button, #verify{
+width:100%;
+font-size: 14px;
+font-weight: bold;
+background-color: #008cff;
+color: white;
+padding: 7px;
+border-radius: 7px;
+border: none;
+cursor: pointer; 
+}
+
+.n-conf{
+    text-align: center;
+    background-color: red;
+    padding:10px;
+    width:85%;
+    margin: 0 25px;
+    color:white;
+    margin-top:20px;
+    border-radius: 7px;
+
+}
+
+#recaptcha-container{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#number, #verificationcode{
+    width:100%;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#verificationcode, #verify{
+    width:85%;
+    margin: 0 25px;
+}
+
+#verificationcode{
+    margin-bottom: 20px;
+}
+
 .continue{
     margin-top: 15px;
 }
@@ -351,7 +397,7 @@
     top:80px;
 }
 
-.red-background{
+.blue-background{
     background-color: #008cff;
     color:white;
 }
@@ -361,7 +407,6 @@
 }
 
 .message-display{
-
 font-size: 1.2rem;
 font-weight: bold;
 padding:10px;
@@ -475,6 +520,7 @@ button{
     margin-left: 10px;
  }
 
+ 
 
 
 
