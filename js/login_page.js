@@ -106,6 +106,7 @@ function disappear() {
   congratsMessageSection.classList.add('hidden');
   crossButton.classList.remove('hidden');
   document.getElementsByClassName('n-conf')[0].style.display = 'none';
+  document.getElementById('verificationcode').value="";
 
   // verifier.style.display="none";
   // sender.style.display="block";
