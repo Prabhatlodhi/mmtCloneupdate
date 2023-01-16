@@ -277,21 +277,20 @@ let testingVariable;
 
 
 ShowMat.addEventListener('click',(e)=>{
-  // if()
-  testingVariable = e;
-  let vartest = e.path
-  for(let i=0; i<e.path.length; i++)
+  console.log(e)
+  var path = e.path || (e.composedPath && e.composedPath());
+  for(let i=0; i<path.length; i++)
     
-    if(vartest[i].classList.contains('airline_one')){
-      document.getElementById('City-Name').innerText = vartest[i].querySelector('h3').innerText;
-      document.getElementById('Airport-Code').innerText = vartest[i].querySelector('p').innerText;
-      document.getElementById('Airport-Name').innerText = vartest[i].querySelector('h5').innerText;
+    if(path[i].classList.contains('airline_one')){
+      document.getElementById('City-Name').innerText = path[i].querySelector('h3').innerText;
+      document.getElementById('Airport-Code').innerText = path[i].querySelector('p').innerText;
+      document.getElementById('Airport-Name').innerText = path[i].querySelector('h5').innerText;
       check1=document.getElementById('City-Name').innerText
       FlightSearchBox.classList.add("hide_element");
 
-      let departureCity = vartest[i].querySelector('h3').innerText;
-      let departureCityAirport = vartest[i].querySelector('p').innerText;
-      let departureCityCode = vartest[i].querySelector('h5').innerText;
+      let departureCity = e.path[i].querySelector('h3').innerText;
+      let departureCityAirport = e.path[i].querySelector('p').innerText;
+      let departureCityCode = e.path[i].querySelector('h5').innerText;
       localStorage.setItem("cityDeparture", departureCity)
       localStorage.setItem("airportDeparture", departureCityAirport)
       localStorage.setItem("airportDepartureCode", departureCityCode)
@@ -305,28 +304,25 @@ ShowMat.addEventListener('click',(e)=>{
 })
 ShowMat1.addEventListener('click',(e)=>{
 
+  var path = e.path || (e.composedPath && e.composedPath());
 
+  for(let i=0; i<path.length; i++)
 
- 
-  testingVariable = e;
-  let vartest1=e.path;
-  for(let i=0; i<e.path.length; i++)
-
-    if(vartest1[i].classList.contains('airline_one_2')){
+    if(path[i].classList.contains('airline_one_2')){
        
       
-      document.getElementById('City-Name1').innerText = vartest1[i].querySelector('h3').innerText;
-      document.getElementById('Airport-Code1').innerText = vartest1[i].querySelector('p').innerText;
-      document.getElementById('Airport-Name1').innerText = vartest1[i].querySelector('h5').innerText;
+      document.getElementById('City-Name1').innerText = path[i].querySelector('h3').innerText;
+      document.getElementById('Airport-Code1').innerText = path[i].querySelector('p').innerText;
+      document.getElementById('Airport-Name1').innerText = path[i].querySelector('h5').innerText;
 
       check2 = document.getElementById('City-Name1').innerText
 
 
       FlightSearchBox1.classList.add("hide_element");
 
-      let arrivalCity = vartest1[i].querySelector('h3').innerText;
-      let arrivalCityAirport = vartest1[i].querySelector('p').innerText;
-      let arrivalCityCode = vartest1[i].querySelector('h5').innerText;
+      let arrivalCity = path[i].querySelector('h3').innerText;
+      let arrivalCityAirport = path[i].querySelector('p').innerText;
+      let arrivalCityCode = path[i].querySelector('h5').innerText;
 
 
       localStorage.setItem("cityLand", arrivalCity)
