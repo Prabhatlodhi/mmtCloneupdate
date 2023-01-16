@@ -275,7 +275,9 @@ function arriveCityClick(){
 
 function bookingTicket(e){
    if(e.target.classList.contains('info_btn')){
-      let flightNamePath = e.path[1].firstElementChild;
+      var path = e.path || (e.composedPath && e.composedPath());
+
+      let flightNamePath = path[1].firstElementChild;
       let flightDetailPath = flightNamePath.nextElementSibling.nextElementSibling;
       let airportDetails = flightNamePath.nextElementSibling.firstElementChild;
       let airportCodeDetails = flightNamePath.nextElementSibling.lastElementChild;
@@ -285,7 +287,7 @@ function bookingTicket(e){
      departure_time : flightNamePath.nextElementSibling.firstElementChild.innerText,
      departure_city : flightNamePath.nextElementSibling.lastElementChild.innerText,
      flight_duration : flightDetailPath.querySelector('p').innerText,
-     ticket_price : e.path[1].lastElementChild.previousElementSibling.querySelector('p').innerText,
+     ticket_price : path[1].lastElementChild.previousElementSibling.querySelector('p').innerText,
      arrival_time : flightDetailPath.nextElementSibling.firstElementChild.querySelector('p').innerText,
      arrival_city : flightDetailPath.nextElementSibling.lastElementChild.innerText,
      departure_airport : airportDetails.nextElementSibling.innerText,

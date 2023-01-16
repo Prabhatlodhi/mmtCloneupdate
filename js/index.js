@@ -288,9 +288,9 @@ ShowMat.addEventListener('click',(e)=>{
       check1=document.getElementById('City-Name').innerText
       FlightSearchBox.classList.add("hide_element");
 
-      let departureCity = e.path[i].querySelector('h3').innerText;
-      let departureCityAirport = e.path[i].querySelector('p').innerText;
-      let departureCityCode = e.path[i].querySelector('h5').innerText;
+      let departureCity = path[i].querySelector('h3').innerText;
+      let departureCityAirport = path[i].querySelector('p').innerText;
+      let departureCityCode = path[i].querySelector('h5').innerText;
       localStorage.setItem("cityDeparture", departureCity)
       localStorage.setItem("airportDeparture", departureCityAirport)
       localStorage.setItem("airportDepartureCode", departureCityCode)
