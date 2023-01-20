@@ -56,37 +56,37 @@ async function fetchData(url) {
 
 }
 
-async function fetchAirportData(query="USA") {
+// async function fetchAirportData(query="USA") {
   
-   const _apiUrl = `https://mmtbackend-production.up.railway.app/airports`;
+//    const _apiUrl = `https://mmtbackend-production.up.railway.app/airports`;
    
-   const options = {
-     method: 'GET',
-     // headers: {
-     //   'X-RapidAPI-Key': '88e3507a35mshab9ed11a3c29c2bp149618jsn8eb901ce4045',
-     //   'X-RapidAPI-Host': 'aerodatabox.p.rapidapi.com'
-     // }
-   };
+//    const options = {
+//      method: 'GET',
+//      // headers: {
+//      //   'X-RapidAPI-Key': '88e3507a35mshab9ed11a3c29c2bp149618jsn8eb901ce4045',
+//      //   'X-RapidAPI-Host': 'aerodatabox.p.rapidapi.com'
+//      // }
+//    };
    
    
-     // Storing response
-     const response = await fetch(_apiUrl, options);
-     // Storing data in form of JSON
-     const data = await response.json();
-     return data;
+//      // Storing response
+//      const response = await fetch(_apiUrl, options);
+//      // Storing data in form of JSON
+//      const data = await response.json();
+//      return data;
 
-   }
+//    }
 
-   async function airportData(){
-      let data= await fetchAirportData();
+   // async function airportData(){
+   //    let data= await fetchAirportData();
 
-      data.data.airports.map((val)=>{
-         departCity.innerHTML+=`<option class="depart_option">${val.city_name}</option>`
-         arriveCity.innerHTML+=`<option class="arrive_option">${val.city_name}</option>`
-      })
-   }
+   //    data.data.airports.map((val)=>{
+   //       departCity.innerHTML+=`<option class="depart_option">${val.city_name}</option>`
+   //       arriveCity.innerHTML+=`<option class="arrive_option">${val.city_name}</option>`
+   //    })
+   // }
 
-   airportData()
+   // airportData()
    
 
  fetchData(api_url)
@@ -134,15 +134,11 @@ const monthToShow = document.querySelector('.month_display');
 const yearToShow = document.querySelector('.year_display');
 const dayNameToShow = document.querySelector('.day_name_display');
 
-let selectedDay = localStorage.getItem("day");
-let selectedMonth = localStorage.getItem("month");
-let selectedYear = localStorage.getItem("year");
-let selectDayName = localStorage.getItem("name_of_day");
 
-dayToShow.innerText = selectedDay;
-monthToShow.innerText = selectedMonth;
-yearToShow.innerText = selectedYear;
-dayNameToShow.innerText = selectDayName;
+dayToShow.innerText = dayNumber;
+monthToShow.innerText = departMonth;
+yearToShow.innerText = departYear;
+dayNameToShow.innerText = dayName;
 
 
 
@@ -247,6 +243,8 @@ async function searchFunction(){
 
    let data = await fetchData(api_url);
 
+   console.log(data)
+
 data.data.flights.map((val)=>{
 
    
@@ -281,6 +279,8 @@ function bookingTicket(e){
       let flightDetailPath = flightNamePath.nextElementSibling.nextElementSibling;
       let airportDetails = flightNamePath.nextElementSibling.firstElementChild;
       let airportCodeDetails = flightNamePath.nextElementSibling.lastElementChild;
+
+      console.log(flightNamePath.nextElementSibling)
      
     const bookingTicketObj = {
      flight : flightNamePath.querySelector('p').innerText,
@@ -329,7 +329,7 @@ async function searchFunctionFlight(flightName){
    // cityText();
    // departCityText();
 
-   
+
 
 
 
