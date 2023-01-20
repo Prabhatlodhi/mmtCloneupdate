@@ -14,7 +14,7 @@ const departCity = document.getElementById("depart_city");
 const arriveCity = document.getElementById("arrive_city");
 const tripTypeWay = document.querySelector('.trip_type_way'); 
 const tripWayOptions = document.querySelector('.trip_way');
-const tripWayOptionClick = document.querySelector('.trip_way_options');
+// const tripWayOptionClick = document.querySelector('.trip_way_options');
 const tripWayDynamic = document.querySelector('.trip_way_dynamic');
 const totalPassengerDisplay = document.querySelector('.total_passenger');
 const passengerClassDisplay = document.querySelector('.passenger_class');
@@ -255,12 +255,12 @@ data.data.flights.map((val)=>{
    
 }
 
-function departCityClick(){
-   departCity.classList.remove('hidden');
-}
-function arriveCityClick(){
-   arriveCity.classList.remove('hidden');
-}
+// function departCityClick(){
+//    departCity.classList.remove('hidden');
+// }
+// function arriveCityClick(){
+//    arriveCity.classList.remove('hidden');
+// }
 
 // function disappearDepartSelectMenu(){
 //    departCityText();
@@ -310,18 +310,18 @@ window.location.href = "../html/booking.html";
 //    tripWayOptions.classList.remove('hidden');
 // }
 
-function tripWayOptionClickFuncion(e){
-   tripWayDynamic.innerText = e.target.innerText;
-   tripWayOptions.classList.add('hidden');
+// function tripWayOptionClickFuncion(e){
+//    tripWayDynamic.innerText = e.target.innerText;
+//    tripWayOptions.classList.add('hidden');
 
 
-}
+// }
 
 flightInfoDisplay.addEventListener('click', bookingTicket);
 
 // tripTypeWay.addEventListener('click', tripTypeOptions);
 
-tripWayOptionClick.addEventListener('click', tripWayOptionClickFuncion)
+// tripWayOptionClick.addEventListener('click', tripWayOptionClickFuncion)
 
 // =====================================================
 async function searchFunctionFlight(flightName){
@@ -354,7 +354,7 @@ data.data.flights.map((val)=>{
 
 
 
-document.getElementById('air_india').addEventListener('click',async ()=>{
+document.getElementById('air_india').addEventListener('click', ()=>{
 
       let airIndia = document.getElementById("air_india");
 
@@ -368,7 +368,7 @@ searchFunctionFlight(flightName);
 })
 
 
-document.getElementById('akasa_air').addEventListener('click',async ()=>{
+document.getElementById('akasa_air').addEventListener('click',()=>{
 
       let akasa = document.getElementById("akasa_air");
 
@@ -382,7 +382,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('emirates').addEventListener('click',async ()=>{
+document.getElementById('emirates').addEventListener('click', ()=>{
 
       let emirates= document.getElementById("emirates");
 
@@ -396,7 +396,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('indigo').addEventListener('click',async ()=>{
+document.getElementById('indigo').addEventListener('click',()=>{
 
       let indigo = document.getElementById("indigo");
 
@@ -410,7 +410,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('spice_jet').addEventListener('click',async ()=>{
+document.getElementById('spice_jet').addEventListener('click',()=>{
 
       let spiceJet = document.getElementById("spice_jet");
 
@@ -424,7 +424,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('vistara').addEventListener('click',async ()=>{
+document.getElementById('vistara').addEventListener('click',()=>{
 
       let vistara = document.getElementById("vistara");
 
@@ -438,7 +438,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('all_flights').addEventListener('click',async ()=>{
+document.getElementById('all_flights').addEventListener('click',()=>{
 
   
 

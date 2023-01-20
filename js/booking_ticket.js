@@ -1,6 +1,6 @@
 let bookingTicketDetails = JSON.parse(localStorage.getItem("booking"));
 
-let totalPassengers = localStorage.getItem("sum") ?? 0;
+// let totalPassengers = localStorage.getItem("sum") ?? 1;
 let totalAdults = localStorage.getItem("adults") ?? 1;
 let totalChildren = localStorage.getItem("children") ?? 0;
 let totalInfants = localStorage.getItem("infants") ?? 0;
