@@ -24,6 +24,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <link rel="stylesheet" href="./css/calendar.css">
     <link rel="stylesheet" href="./css/sign-in.css">
     
   </head>
@@ -1419,7 +1420,33 @@
 </section>
 
 <!-- ======================================================================================== -->
-<div class="contianer" style="display: none;" id="Main_calender">
+
+<div class="calendar1" style="display:none" id="Main_calender">
+  <div class="month">
+    <i class="fa fa-angle-left prev" style="font-size:22px"></i>
+     
+     
+    <div class="date">
+      <h1></h1>
+      <p></p>
+    </div>
+    <i class="fa fa-angle-right next" style="font-size:22px"></i>
+    
+  </div>
+  <div class="weekdays">
+    <div>Sun</div>
+    <div>Mon</div>
+    <div>Tue</div>
+    <div>Wed</div>
+    <div>Thu</div>
+    <div>Fri</div>
+    <div>Sat</div>
+  </div>
+  <div class="days"></div>
+</div>
+
+
+<!-- <div class="contianer" style="display: none;" id="Main_calender">
   <div class="calendar">
     <div class="calendar-header">
       <span class="month-picker" id="month-picker"> May </span>
@@ -1458,7 +1485,7 @@
     </div>
     <div class="month-list"></div>
   </div>
-</div>
+</div> -->
 
 <!-- ======================================================================================== -->
 
@@ -1550,6 +1577,7 @@
         <script src="js/login_page.js"></script>
         <script src="js/index.js"></script>
         <script src="js/dropdown.js"></script>
+        <script src="js/calender.js"></script>
         
 
   </body>
