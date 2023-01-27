@@ -14,7 +14,7 @@ const departCity = document.getElementById("depart_city");
 const arriveCity = document.getElementById("arrive_city");
 const tripTypeWay = document.querySelector('.trip_type_way'); 
 const tripWayOptions = document.querySelector('.trip_way');
-const tripWayOptionClick = document.querySelector('.trip_way_options');
+// const tripWayOptionClick = document.querySelector('.trip_way_options');
 const tripWayDynamic = document.querySelector('.trip_way_dynamic');
 const totalPassengerDisplay = document.querySelector('.total_passenger');
 const passengerClassDisplay = document.querySelector('.passenger_class');
@@ -56,37 +56,37 @@ async function fetchData(url) {
 
 }
 
-async function fetchAirportData(query="USA") {
+// async function fetchAirportData(query="USA") {
   
-   const _apiUrl = `https://mmtbackend-production.up.railway.app/airports`;
+//    const _apiUrl = `https://mmtbackend-production.up.railway.app/airports`;
    
-   const options = {
-     method: 'GET',
-     // headers: {
-     //   'X-RapidAPI-Key': '88e3507a35mshab9ed11a3c29c2bp149618jsn8eb901ce4045',
-     //   'X-RapidAPI-Host': 'aerodatabox.p.rapidapi.com'
-     // }
-   };
+//    const options = {
+//      method: 'GET',
+//      // headers: {
+//      //   'X-RapidAPI-Key': '88e3507a35mshab9ed11a3c29c2bp149618jsn8eb901ce4045',
+//      //   'X-RapidAPI-Host': 'aerodatabox.p.rapidapi.com'
+//      // }
+//    };
    
    
-     // Storing response
-     const response = await fetch(_apiUrl, options);
-     // Storing data in form of JSON
-     const data = await response.json();
-     return data;
+//      // Storing response
+//      const response = await fetch(_apiUrl, options);
+//      // Storing data in form of JSON
+//      const data = await response.json();
+//      return data;
 
-   }
+//    }
 
-   async function airportData(){
-      let data= await fetchAirportData();
+   // async function airportData(){
+   //    let data= await fetchAirportData();
 
-      data.data.airports.map((val)=>{
-         departCity.innerHTML+=`<option class="depart_option">${val.city_name}</option>`
-         arriveCity.innerHTML+=`<option class="arrive_option">${val.city_name}</option>`
-      })
-   }
+   //    data.data.airports.map((val)=>{
+   //       departCity.innerHTML+=`<option class="depart_option">${val.city_name}</option>`
+   //       arriveCity.innerHTML+=`<option class="arrive_option">${val.city_name}</option>`
+   //    })
+   // }
 
-   airportData()
+   // airportData()
    
 
  fetchData(api_url)
@@ -134,15 +134,11 @@ const monthToShow = document.querySelector('.month_display');
 const yearToShow = document.querySelector('.year_display');
 const dayNameToShow = document.querySelector('.day_name_display');
 
-let selectedDay = localStorage.getItem("day");
-let selectedMonth = localStorage.getItem("month");
-let selectedYear = localStorage.getItem("year");
-let selectDayName = localStorage.getItem("name_of_day");
 
-dayToShow.innerText = selectedDay;
-monthToShow.innerText = selectedMonth;
-yearToShow.innerText = selectedYear;
-dayNameToShow.innerText = selectDayName;
+dayToShow.innerText = dayNumber;
+monthToShow.innerText = departMonth;
+yearToShow.innerText = departYear;
+dayNameToShow.innerText = dayName;
 
 
 
@@ -247,6 +243,8 @@ async function searchFunction(){
 
    let data = await fetchData(api_url);
 
+   console.log(data)
+
 data.data.flights.map((val)=>{
 
    
@@ -257,12 +255,12 @@ data.data.flights.map((val)=>{
    
 }
 
-function departCityClick(){
-   departCity.classList.remove('hidden');
-}
-function arriveCityClick(){
-   arriveCity.classList.remove('hidden');
-}
+// function departCityClick(){
+//    departCity.classList.remove('hidden');
+// }
+// function arriveCityClick(){
+//    arriveCity.classList.remove('hidden');
+// }
 
 // function disappearDepartSelectMenu(){
 //    departCityText();
@@ -281,6 +279,8 @@ function bookingTicket(e){
       let flightDetailPath = flightNamePath.nextElementSibling.nextElementSibling;
       let airportDetails = flightNamePath.nextElementSibling.firstElementChild;
       let airportCodeDetails = flightNamePath.nextElementSibling.lastElementChild;
+
+      console.log(flightNamePath.nextElementSibling)
      
     const bookingTicketObj = {
      flight : flightNamePath.querySelector('p').innerText,
@@ -310,18 +310,18 @@ window.location.href = "../html/booking.html";
 //    tripWayOptions.classList.remove('hidden');
 // }
 
-function tripWayOptionClickFuncion(e){
-   tripWayDynamic.innerText = e.target.innerText;
-   tripWayOptions.classList.add('hidden');
+// function tripWayOptionClickFuncion(e){
+//    tripWayDynamic.innerText = e.target.innerText;
+//    tripWayOptions.classList.add('hidden');
 
 
-}
+// }
 
 flightInfoDisplay.addEventListener('click', bookingTicket);
 
 // tripTypeWay.addEventListener('click', tripTypeOptions);
 
-tripWayOptionClick.addEventListener('click', tripWayOptionClickFuncion)
+// tripWayOptionClick.addEventListener('click', tripWayOptionClickFuncion)
 
 // =====================================================
 async function searchFunctionFlight(flightName){
@@ -329,7 +329,7 @@ async function searchFunctionFlight(flightName){
    // cityText();
    // departCityText();
 
-   
+
 
 
 
@@ -354,7 +354,7 @@ data.data.flights.map((val)=>{
 
 
 
-document.getElementById('air_india').addEventListener('click',async ()=>{
+document.getElementById('air_india').addEventListener('click', ()=>{
 
       let airIndia = document.getElementById("air_india");
 
@@ -368,7 +368,7 @@ searchFunctionFlight(flightName);
 })
 
 
-document.getElementById('akasa_air').addEventListener('click',async ()=>{
+document.getElementById('akasa_air').addEventListener('click',()=>{
 
       let akasa = document.getElementById("akasa_air");
 
@@ -382,7 +382,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('emirates').addEventListener('click',async ()=>{
+document.getElementById('emirates').addEventListener('click', ()=>{
 
       let emirates= document.getElementById("emirates");
 
@@ -396,7 +396,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('indigo').addEventListener('click',async ()=>{
+document.getElementById('indigo').addEventListener('click',()=>{
 
       let indigo = document.getElementById("indigo");
 
@@ -410,7 +410,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('spice_jet').addEventListener('click',async ()=>{
+document.getElementById('spice_jet').addEventListener('click',()=>{
 
       let spiceJet = document.getElementById("spice_jet");
 
@@ -424,7 +424,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('vistara').addEventListener('click',async ()=>{
+document.getElementById('vistara').addEventListener('click',()=>{
 
       let vistara = document.getElementById("vistara");
 
@@ -438,7 +438,7 @@ searchFunctionFlight(flightName);
         
       
 })
-document.getElementById('all_flights').addEventListener('click',async ()=>{
+document.getElementById('all_flights').addEventListener('click',()=>{
 
   
 

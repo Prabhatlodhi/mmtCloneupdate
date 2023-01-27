@@ -253,7 +253,7 @@ function continueButtonFunction(e) {
   for (i = 0; i < noOfPassenger; i++) {
     popupWindow.innerHTML += ` <table class="cardreview-wrap">
                       <tr>
-                          <th colspan="2">ADULT ${++countOfpass}</th>
+                          <th colspan="2">PASSENGER ${++countOfpass}</th>
                       </tr>
                       <tr>
                           <td>First & Middle Name</td>
